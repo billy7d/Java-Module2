@@ -9,31 +9,28 @@ public class In20soNto {
         int n = 2;
 
 
-
-        public static boolean isPrime(int n) {
-        if (n < 2) {
-            return false;
-        } else {
-            int i = 2;
-            while (i <= Math.sqrt(n)) {
-                if (n % i == 0) {
-                    return false;
-
-                }
-
-                i++;
-                n++;
-            }
-        }
-        }
         while (count < numbers) {
-            if (isPrime(n) == true) {
-                count++;
+            if (isPrime(n)) {
                 System.out.println(n);
-
+                count++;
             }
             n++;
         }
+    }
 
+    public static boolean isPrime(int n) {
+        if (n < 2) {
+            return false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+        } return true;
     }
 }
+
+
+
+
