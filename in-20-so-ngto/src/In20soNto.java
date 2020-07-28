@@ -4,31 +4,32 @@ public class In20soNto {
     public static void main(String[] args) {
 
 
-        int numb = 20;
+        int numbers = 20;
         int count = 0;
         int n = 2;
-        int number =2;
+
         boolean check = true;
 
-        if (number < 2) {
+        if (n < 2) {
             check = false;
         } else {
             int i = 2;
-            while (i <= Math.sqrt(number)) {
-                if (number % i == 0) {
+            while (i <= Math.sqrt(n)) {
+                if (n % i == 0) {
                     check = false;
-                    continue;
+                    break;
                 }
                 check = true;
                 i++;
+                n++;
             }
         }
-        while (count < numb) {
+        while (count < numbers) {
             if (check) {
                 count++;
-                System.out.println(number);
+                System.out.println(n);
 
-            }number ++;
+            }
         }
     }
 }
