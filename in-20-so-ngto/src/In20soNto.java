@@ -8,28 +8,32 @@ public class In20soNto {
         int count = 0;
         int n = 2;
 
-        boolean check = true;
 
+
+        public static boolean isPrime(int n) {
         if (n < 2) {
-            check = false;
+            return false;
         } else {
             int i = 2;
             while (i <= Math.sqrt(n)) {
                 if (n % i == 0) {
-                    check = false;
-                    break;
+                    return false;
+
                 }
-                check = true;
+
                 i++;
                 n++;
             }
         }
+        }
         while (count < numbers) {
-            if (check) {
+            if (isPrime(n) == true) {
                 count++;
                 System.out.println(n);
 
             }
+            n++;
         }
+
     }
 }
