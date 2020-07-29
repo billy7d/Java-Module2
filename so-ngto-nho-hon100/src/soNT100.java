@@ -1,11 +1,6 @@
 public class soNT100 {
     public static void main(String[] args) {
 
-
-
-//        int n = 2;
-
-
         for (int n = 2; n <= 100; n++) {
             if (isPrime(n)) {
                 System.out.println(n);
