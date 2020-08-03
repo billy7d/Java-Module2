@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcb90681-83ab-4791-9e35-42428a3982b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SystemTime.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SystemTime/SystemTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SystemTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Thực hành] Tính số ngày trong tháng/src/DayPerMonth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-so/out/production/doc-so/readNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/doc-so/out/production/doc-so/readNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc-so/src/readNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/doc-so/src/readNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isLeapYear/out/production/isLeapYear/isLeapYear.class" beforeDir="false" afterPath="$PROJECT_DIR$/isLeapYear/out/production/isLeapYear/isLeapYear.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SystemTime" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -128,6 +127,11 @@
       <option name="presentableId" value="Default" />
       <updated>1595776554035</updated>
       <workItem from="1595776557808" duration="2216000" />
+      <workItem from="1595779177447" duration="45000" />
+      <workItem from="1595841489081" duration="273000" />
+      <workItem from="1595841779447" duration="138000" />
+      <workItem from="1595842687377" duration="80000" />
+      <workItem from="1595948580448" duration="311000" />
     </task>
     <servers />
   </component>
@@ -144,16 +148,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1595776915468">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1595776915468" />
-    <state x="909" y="161" key="FileChooserDialogImpl" timestamp="1595778858092">
+    <state x="909" y="161" key="FileChooserDialogImpl" timestamp="1595842766149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="909" y="161" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595778858092" />
+    <state x="909" y="161" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595842766149" />
     <state width="768" height="210" key="GridCell.Tab.0.bottom" timestamp="1595778859730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -170,5 +175,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="768" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595778859730" />
+    <state x="418" y="14" key="new project wizard" timestamp="1595948892318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="418" y="14" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1595948892318" />
   </component>
 </project>
