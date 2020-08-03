@@ -28,6 +28,20 @@ public class Point3D extends Point2D {
         return getXYZ;
     }
 
+    @Override
+    public void displayX() {
+        super.displayX();
+    }
+
+    @Override
+    public void displayY() {
+        super.displayY();
+    }
+
+    public void displayZ(){
+        System.out.println("toa do z: " + getZ());
+    }
+
     public String toString(){
         return "Point3d co toa do la: "+ getXYZ();
     }

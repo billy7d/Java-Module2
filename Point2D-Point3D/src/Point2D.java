@@ -35,10 +35,16 @@ public class Point2D {
 
     public float[] getXY(){
         float[] getXY = {this.x, this.y};
-        for (int i =0; i<getXY.length;i++){
-            System.out.println(getXY[i]);
-        }
+
         return getXY;
+    }
+
+    public void displayX(){
+        System.out.println("toa do x: " + getX());
+    }
+    public void displayY(){
+
+        System.out.println("toa do y: " + getY());
     }
 
     public String toString(){
