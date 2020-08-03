@@ -5,9 +5,8 @@ public class Circle extends Shape{
     public Circle(){
         this.radius = 1;
     }
-    public Circle(double radius){
 
-    }
+    public Circle(double radius){ }
 
     public Circle(double radius, String color, boolean filled){
         super(color, filled);
@@ -16,7 +15,7 @@ public class Circle extends Shape{
 
 
     public double getRadius(){
-        return this.radius;
+        return radius;
     }
 
     public void setRadius(double radius){
@@ -33,7 +32,7 @@ public class Circle extends Shape{
 
     @Override
     public String toString(){
-        System.out.println("A Circle with radius " + this.radius +" which is a subclass of "+ super.toString());
+        return "A Circle with radius " + this.radius +" which is a subclass of "+ super.toString();
     }
 
 
