@@ -2,15 +2,18 @@ public class Triangle extends Shape{
 
     private double side1 = 1;
     private double side2 = 1;
-    private String color = "blue";
+    private double side3 = 1;
+
 
     public Triangle(){
 
     }
 
     public Triangle(double side1,double side2, double side3,String color) {
-        super(side1,color);
+        super(color);
+        this.side1 = side1;
         this.side2 = side2;
+        this.side3 = side3;
     }
 
     public double getSide1() {
@@ -31,24 +34,14 @@ public class Triangle extends Shape{
 
 
 
-
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     @Override
     public double getArea() {
-        return 0.25*(Math.sqrt((side1+side2+super.getSide())*(side1+side2-super.getSide())*(side2+super.getSide()-side1)*(super.getSide()+side1-side2)));
+        return 0.25*(Math.sqrt((side1+side2+side3)*(side1+side2-side3)*(side2+side3-side1)*(side3+side1-side2)));
     }
 
     @Override
     public double getPerimeter() {
-        return side1+side2+super.getSide();
+        return side1+side2+side3;
     }
 
     @Override
@@ -56,10 +49,10 @@ public class Triangle extends Shape{
         return "Triangle{" +
                 "side1= " + side1 +
                 ", side2= " + side2 +
-                ", side3= " + super.getSide() +
+                ", side3= " + side3 +
                 ", Chu vi= " + getPerimeter() +
                 ", Dien tich= " + getArea() +
-                ", color= '" + color + '\'' +
+                ", color= '" + super.getColor() + '\'' +
                 '}';
     }
 }
