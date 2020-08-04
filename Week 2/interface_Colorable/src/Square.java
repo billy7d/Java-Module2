@@ -1,25 +1,51 @@
-public class Square implements Colorable {
-    private double side =1;
-
-    public Square(){}
-
-    public Square(double side){
-        this.side = side;
+public class Square extends Rectangle implements Resizeable,Colorable {
+    public Square() {
     }
-    public double getArea(){
-        return side*side;
+
+    public Square(double side) {
+        super(side, side);
+    }
+
+    public Square(double side, String color, boolean filled) {
+        super(side, side, color, filled);
+    }
+
+    public double getSide() {
+        return getWidth();
+    }
+
+    public void setSide(double side) {
+        super.setWidth(side);
+        super.setLength(side);
+    }
+
+    @Override
+    public void setWidth(double width) {
+        setSide(width);
+    }
+
+    @Override
+    public void setLength(double length) {
+        setSide(length);
     }
 
     @Override
     public String toString() {
-        return "Square{" +
-                "side= " + side +
-                "Area= "+ getArea()+
-                '}';
+        return "A Square with side="
+                + getSide()
+                + "Area= "
+                + getArea()
+                + ", which is a subclass of "
+                + super.toString();
     }
 
     @Override
     public void howToColor() {
-        System.out.println(" Color all four sides..");
+        System.out.println("Colored 4 side...");
+    }
+
+    @Override
+    public void resize(double percent) {
+        setSide(getSide()*percent);
     }
 }
