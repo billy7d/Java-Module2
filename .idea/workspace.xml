@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263223ec-6b3c-4c61-94e1-4da7cbc2aa19" name="Default Changelist" comment="" />
+    <list default="true" id="263223ec-6b3c-4c61-94e1-4da7cbc2aa19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,11 +49,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week 2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -118,6 +122,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="263223ec-6b3c-4c61-94e1-4da7cbc2aa19" name="Default Changelist" comment="" />
@@ -132,11 +137,18 @@
       <workItem from="1595842687377" duration="80000" />
       <workItem from="1595948580448" duration="311000" />
       <workItem from="1596427237577" duration="720000" />
+      <workItem from="1596554118397" duration="521000" />
+      <workItem from="1596554648416" duration="15000" />
+      <workItem from="1596554903362" duration="78000" />
+      <workItem from="1596555013809" duration="11000" />
+      <workItem from="1596629705698" duration="124000" />
+      <workItem from="1596632026805" duration="300000" />
+      <workItem from="1596632419069" duration="187000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -150,15 +162,25 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Week 2/java-cleancode-refactoring-exercise" />
+      <path value="$PROJECT_DIR$/Week 2/java-cleancode-refactoring-method-extraction" />
+      <path value="$PROJECT_DIR$/Week 2/java-cleancode-refactoring-variable-extraction" />
+      <path value="$PROJECT_DIR$/java-cleancode-refactoring-variable-extraction" />
+      <path value="$PROJECT_DIR$/Week 2/junit-simple-calculator" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1595776915468">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1595776915468" />
-    <state x="1095" y="135" key="FileChooserDialogImpl" timestamp="1596427218500">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1369" y="170" key="FileChooserDialogImpl" timestamp="1596555023415">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1095" y="135" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596427218500" />
+    <state x="1369" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596555023415" />
     <state width="768" height="210" key="GridCell.Tab.0.bottom" timestamp="1595778859730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -175,9 +197,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="768" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595778859730" />
-    <state x="418" y="14" key="new project wizard" timestamp="1596427957420">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="650" y="165" key="SettingsEditor" timestamp="1596632481818">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="650" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596632481818" />
+    <state x="523" y="18" key="new project wizard" timestamp="1596632604967">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="418" y="14" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1596427957420" />
+    <state x="523" y="18" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1596632604967" />
   </component>
 </project>
