@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Point2D-Point3D/Point2D-Point3D.iml" filepath="$PROJECT_DIR$/Point2D-Point3D/Point2D-Point3D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Week 2.iml" filepath="$PROJECT_DIR$/.idea/Week 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/animal_interface_edible/animal_interface_edible.iml" filepath="$PROJECT_DIR$/animal_interface_edible/animal_interface_edible.iml" />
+      <module fileurl="file://$PROJECT_DIR$/da-hinh/da-hinh.iml" filepath="$PROJECT_DIR$/da-hinh/da-hinh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/he-doi-tuong-hinh-hoc/he-doi-tuong-hinh-hoc.iml" filepath="$PROJECT_DIR$/he-doi-tuong-hinh-hoc/he-doi-tuong-hinh-hoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interface_comparable/interface_comparable.iml" filepath="$PROJECT_DIR$/interface_comparable/interface_comparable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lop-Circle-lop-Cylinder/lop-Circle-lop-Cylinder.iml" filepath="$PROJECT_DIR$/lop-Circle-lop-Cylinder/lop-Circle-lop-Cylinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/point-moveAblePoint/point-moveAblePoint.iml" filepath="$PROJECT_DIR$/point-moveAblePoint/point-moveAblePoint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/triangle/triangle.iml" filepath="$PROJECT_DIR$/triangle/triangle.iml" />
+    </modules>
+  </component>
+</project>
