@@ -12,7 +12,7 @@ public class MyListTest {
 
         System.out.println(myList.toString());
 
-        System.out.println(myList.clone().toString());
+
 
     }
 }

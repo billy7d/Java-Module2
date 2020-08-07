@@ -7,7 +7,6 @@ public class MyList<E> {
     private Object[] elements = new Object[DEFAULT_CAPACITY];
 
     public MyList() {
-
     }
 
     public MyList(int capacity) {
@@ -24,23 +23,19 @@ public class MyList<E> {
 
     }
 
-    public E get(int i) {
-        return (E) elements[i];
-    }
-
 
     public E remove(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("index" + index + " out of bounds ");
         } else {
-
+            Object temp = elements[index];
             for (int i = index; i < size - 1; i++) {
                 elements[i] = elements[i + 1];
             }
             elements[size - 1] = null;
 
             size--;
-            return (E) elements[index];
+            return (E) temp;
         }
     }
 
@@ -54,9 +49,9 @@ public class MyList<E> {
         return count;
     }
 
-    public E clone() {
+    public E clone(int capacity) {
         Object[] newElements = new Object[DEFAULT_CAPACITY];
-       newElements = elements;
+        newElements=elements;
         return (E) newElements;
     }
 
@@ -84,7 +79,24 @@ public class MyList<E> {
             return true;
     }
 
+    public void ensureCapacity(int minCapacity) {
+         minCapacity=size;
+        if (size > elements.length) {
+            Object[] newList = new Object[minCapacity];
+            newList = elements;
+            elements =newList;
+        }
+    }
 
+    public E get(int i) {
+        return (E) elements[i];
+    }
+
+    public void clear(){
+        for (int i =0;i<elements.length;i++){
+            elements[i]=null;
+        }
+    }
 
 
 
