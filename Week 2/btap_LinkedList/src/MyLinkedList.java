@@ -12,8 +12,13 @@ public class MyLinkedList<E> {
         Node current = head;
         Node holder;
 
-        for (int i=0;i<index -1;i++)
-
+        for (int i=0;i<index -1;i++){
+            current = current.next;
+        }
+        holder = current.next;
+        current.next = new Node(element);
+        current.next.next = holder;
+        numNodes++;
 
     }
 
@@ -26,6 +31,7 @@ public class MyLinkedList<E> {
     }
 
     public E remove (int index){
+
 
     }
 
@@ -62,6 +68,7 @@ public class MyLinkedList<E> {
         public Node(Object data){
             this.data = data;
         }
+
         public Object getData(){
             return this.data;
         }
