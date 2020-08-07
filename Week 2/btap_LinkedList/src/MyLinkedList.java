@@ -4,8 +4,8 @@ public class MyLinkedList<E> {
     private Node head;
     private int numNodes;
 
-    public MyLinkedList(){
-
+    public MyLinkedList(Object data){
+        head = new Object(data);
     }
 
     public void add(int index, E element){
@@ -31,11 +31,24 @@ public class MyLinkedList<E> {
     }
 
     public E remove (int index){
+        Node current = head;
+        Node del;
 
+        for (int i=0;i<index-1;i++){
+            current = current.next;
+        }
+
+        del = current.next;
+
+        current.next =del.next;
+        numNodes--;
+
+        return (E) del.data;
 
     }
 
     public boolean remove(Object e){
+        Node current = head;
 
     }
 
