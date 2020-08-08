@@ -5,7 +5,7 @@ public class MyLinkedList<E> {
     private int numNodes;
 
     public MyLinkedList(Object data){
-        head = new Object(data);
+        head = new Node(data);
     }
 
     public void add(int index, E element){
@@ -47,31 +47,36 @@ public class MyLinkedList<E> {
 
     }
 
-    public boolean remove(Object e){
-        Node current = head;
-
+//    public boolean remove(Object e){
+//        Node current = head;
+//
+//    }
+//
+//    public int size(){}
+//
+//    public E clone(){}
+//
+//    public boolean contains (E o){}
+//
+//    public int add(E e){}
+//
+//    public void ensureCapacity(int minCapacity){}
+//
+    public E get(int index){
+        Node temp = head;
+        for (int  j =0;j<index;j++){
+            temp = temp.next;
+        }
+        return (E) temp;
     }
-
-    public int size(){}
-
-    public E clone(){}
-
-    public boolean contains (E o){}
-
-    public int add(E e){}
-
-    public void ensureCapacity(int minCapacity){}
-
-    public E get(int i){}
-
-    public E getFirst(){}
-
-    public E getLast(){}
-
-    public void clear(){}
-
-
-
+//
+//    public E getFirst(){}
+//
+//    public E getLast(){}
+//
+//    public void clear(){}
+//
+//
 
 
     private class Node {
