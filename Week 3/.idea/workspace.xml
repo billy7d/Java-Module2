@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b637fead-5706-43c3-bc7b-95f047810131" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/MyLinkedList/out/production/MyLinkedList/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/MyLinkedList/out/production/MyLinkedList/MyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/MyLinkedList/out/production/MyLinkedList/TestMyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/MyLinkedList/out/production/MyLinkedList/TestMyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/MyLinkedList/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/MyLinkedList/src/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/MyLinkedList/src/TestMyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/MyLinkedList/src/TestMyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/btap_LinkedList/out/production/btap_LinkedList/MyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/btap_LinkedList/out/production/btap_LinkedList/MyLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/btap_LinkedList/out/production/btap_LinkedList/MyLinkedList$Node2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/btap_LinkedList/out/production/btap_LinkedList/MyLinkedList$Node2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/btap_LinkedList/out/production/btap_LinkedList/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/btap_LinkedList/out/production/btap_LinkedList/MyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/btap_LinkedList/out/production/btap_LinkedList/MyLinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/btap_LinkedList/out/production/btap_LinkedList/MyLinkedListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/btap_LinkedList/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/btap_LinkedList/src/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week 2/btap_LinkedList/src/MyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week 2/btap_LinkedList/src/MyLinkedListTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1frJ6kb6QrPs4pxWCafuXzY0SQ4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b637fead-5706-43c3-bc7b-95f047810131" name="Default Changelist" comment="" />
+      <created>1596970105098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596970105098</updated>
+      <workItem from="1596970106148" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1082" y="259" key="FileChooserDialogImpl" timestamp="1596970144255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1082" y="259" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596970144255" />
+    <state x="685" y="138" key="new project wizard" timestamp="1596970147681">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="685" y="138" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1596970147681" />
+  </component>
+</project>

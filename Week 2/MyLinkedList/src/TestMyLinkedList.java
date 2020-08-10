@@ -6,8 +6,8 @@ public class TestMyLinkedList {
         linkedList.addFirst(3);
         linkedList.addFirst(4);
 
-        linkedList.add(4,5);
-        linkedList.add(5,6);
+        linkedList.add(4,0);
+        linkedList.add(4,0);
         linkedList.printList();
     }
 }

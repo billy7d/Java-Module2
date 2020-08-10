@@ -4,6 +4,8 @@ public class MyLinkedList<E> {
     private Node head;
     private int numNodes;
 
+
+
     public MyLinkedList(Object data){
         head = new Node(data);
     }
@@ -127,6 +129,7 @@ public class MyLinkedList<E> {
         private Node next;
         private Object data;
 
+        
         public Node(Object data){
             this.data = data;
         }
