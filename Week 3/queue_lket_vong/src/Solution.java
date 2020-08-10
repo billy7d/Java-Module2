@@ -32,6 +32,8 @@ public class Solution {
         }
         else {
             Node del = queue.front;
+            queue.front= queue.front.link;
+            queue.rear.link= queue.front;
 
         }
 
