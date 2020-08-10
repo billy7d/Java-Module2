@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class MyStack<T> {
 
     private ArrayList<T> list;
+    private ArrayList<T> list2 = new ArrayList<>();
+
 
 
     public MyStack(){
@@ -23,6 +25,14 @@ public class MyStack<T> {
             return null;
     }
 
+    public void reverse() {
+        if (!list.isEmpty()) {
+            for (int i = list.size(); i > 0; i--) {
+                list2.add(list.remove(list.size()-1));
+            }
+        } list = list2;
+    }
+
     public boolean isEmpty(){
         if (list.isEmpty())
             return true;
@@ -33,9 +43,9 @@ public class MyStack<T> {
         return list.size();
     }
 
-    public String[] split(String seperator){
+    public String[] split(String list,String seperator){
         if (!isEmpty()){
-           String[] result=  split(seperator);
+           String[] result = list.split(seperator);
            return result;
         }
         else return null;

@@ -13,11 +13,8 @@ public class MyStackTest {
         System.out.println(list);
         System.out.println(list.size());
 
-        for (int i =list.size();i>0;i--){
-        list2.push(list.pop());
-        }
+        list.reverse();
 
-        list = list2;
         System.out.println("After swap: ");
         System.out.println(list);
 
@@ -27,10 +24,10 @@ public class MyStackTest {
         list3.push("dep");
         list3.push("zai");
         MyStack<String> list4 = new MyStack<>();
-        for (int i =list3.size();i>0;i--){
-            list4.push(String.valueOf(list3.pop()));
-        }
-        System.out.println(list4);
+
+
+        list3.reverse();
+        System.out.println(list3);
 
 
 
