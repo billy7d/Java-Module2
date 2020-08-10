@@ -2,37 +2,45 @@ import java.util.ArrayList;
 
 public class MyStack<T> {
 
-    ArrayList<T> list;
-    ArrayList<T> newList =new ArrayList<>();
+    private ArrayList<T> list;
+
 
     public MyStack(){
         list = new ArrayList<T>();
     }
 
-    public void add(int index,T element){
-        list.add(index,element);
+    public void push(T element){
+        list.add(element);
     }
 
-    public T remove(int index){
-       return list.remove(index);
-
+    public T pop(){
+        Object popElement;
+        if (!isEmpty()) {
+            popElement = list.get(list.size() - 1);
+            list.remove(list.size() - 1);
+            return (T) popElement;
+        } else
+            return null;
     }
+
+    public boolean isEmpty(){
+        if (list.isEmpty())
+            return true;
+        else return false;
+    }
+
     public int size(){
         return list.size();
     }
 
-
-
-
-
-    public void swap(){
-
-        for (int i = list.size()-1;i>0 ;i--){
-            newList.add(list.size()-1-i, list.get(i));
-            list= newList;
+    public String[] split(String seperator){
+        if (!isEmpty()){
+           String[] result=  split(seperator);
+           return result;
         }
-
+        else return null;
     }
+
 
 
     @Override
@@ -41,4 +49,5 @@ public class MyStack<T> {
                 "list=" + list +
                 '}';
     }
+
 }
