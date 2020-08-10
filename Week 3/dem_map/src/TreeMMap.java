@@ -14,9 +14,8 @@ public class TreeMMap {
                 if (map.containsKey(split[i])) {
                     value++;
 
-                } else {
-                    map.put(split[i], value);
-                }
+                } map.put(split[i], value);
+
         }
 
 
