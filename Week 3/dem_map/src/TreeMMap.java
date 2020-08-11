@@ -13,7 +13,8 @@ public class TreeMMap {
                value = map.get(split[i]);
                map.replace(split[i],++value);
 
-            }map.put(split[i],value);
+            }else
+                map.put(split[i],1);
         }
 
         System.out.println(map);
