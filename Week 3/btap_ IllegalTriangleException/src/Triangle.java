@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Triangle {
@@ -14,19 +15,26 @@ public class Triangle {
         System.out.println("Nhap canh c: ");
         double c = scanner.nextDouble();
 
-        isTriangle(a,b,c);
-
+        try {
+            IllegalTriangleException(a, b, c);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
     }
 
-    public static void isTriangle (double a,double b, double c){
-        if (a+b<c){
-            throw IllegalTriangleException;
-        } else if (a+c<b){
-            throw IllegalTriangleException;
-        } else if (b+c<a){
-            throw IllegalTriangleException;
+
+    public static void IllegalTriangleException(double a, double b, double c) throws Exception {
+        if (a <= 0 || b <= 0 || c <= 0) {
+//            System.out.println(" 3 canh khong duoc nho hon 0");
+            throw new Exception();
         }
+        if (a + b <= c || a + c <= b || b + c <= a) {
+            throw new Exception();
+
+
+        }
+
     }
 }
