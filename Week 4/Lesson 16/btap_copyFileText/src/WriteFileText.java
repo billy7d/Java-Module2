@@ -1,20 +1,26 @@
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 
 public class WriteFileText {
     public static void writeFileText(String originalFilePath,String filePath){
 
         try {
-            FileWriter fileWriter = new FileWriter(filePath);
+            File file = new File(filePath);
 
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            OutputStream  outputStream = new FileOutputStream(file);
 
-            bufferedWriter.write(ReadFileText.readFileText(originalFilePath));
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
 
-            bufferedWriter.close();
+
+            for (String i: ReadFileText.readFileText(originalFilePath)){
+                outputStreamWriter.write(i+"\n");
+            }
+
+
+
+            outputStreamWriter.close();
+
 
         } catch (IOException e) {
             e.printStackTrace();

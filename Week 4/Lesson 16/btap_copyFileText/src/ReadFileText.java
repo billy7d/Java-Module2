@@ -1,33 +1,31 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
+import java.util.ArrayList;
 
 public class ReadFileText {
-    public static String readFileText(String filePath) {
-        String line = "";
+    public static ArrayList<String> readFileText(String filePath) {
+        ArrayList<String> arrayList = new ArrayList<>();
         try{
             File file = new File(filePath);
 
-            FileReader  fileReader = new FileReader(file);
+            InputStream inputStream = new FileInputStream(file);
+            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
 
             if (!file.exists()) throw new FileNotFoundException();
 
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
+            String line ="";
             while ((line = bufferedReader.readLine())!=null) {
-                System.out.println(line);
+                arrayList.add(line);
             }
+
             bufferedReader.close();
-
-
-
 
         } catch (Exception e){
             e.getStackTrace();
         }
 
-        return line;
+        return arrayList;
     }
 
 
