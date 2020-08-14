@@ -2,13 +2,15 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class ReadFileText {
-    public static ArrayList<String> readFileText(String filePath) {
-        ArrayList<String> arrayList = new ArrayList<>();
+
+    public static void readFileText(String filePath,ArrayList<String> arrayList) {
+
         try{
             File file = new File(filePath);
 
             InputStream inputStream = new FileInputStream(file);
             InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+
 
             if (!file.exists()) throw new FileNotFoundException();
 
@@ -25,7 +27,7 @@ public class ReadFileText {
             e.getStackTrace();
         }
 
-        return arrayList;
+
     }
 
 

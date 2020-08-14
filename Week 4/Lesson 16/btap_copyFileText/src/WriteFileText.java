@@ -1,9 +1,10 @@
 
 import java.io.*;
+import java.util.ArrayList;
 
 
 public class WriteFileText {
-    public static void writeFileText(String originalFilePath,String filePath){
+    public static void writeFileText( String filePath,ArrayList<String> arr){
 
         try {
             File file = new File(filePath);
@@ -13,12 +14,9 @@ public class WriteFileText {
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
 
 
-            for (String i: ReadFileText.readFileText(originalFilePath)){
+            for (String i:arr){
                 outputStreamWriter.write(i+"\n");
             }
-
-
-
             outputStreamWriter.close();
 
 
