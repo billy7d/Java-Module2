@@ -4,6 +4,7 @@ import java.util.Collections;
 public class ProductManager {
     ArrayList<Product> arrayList;
 
+
     public ProductManager(){
         arrayList = new ArrayList<>();
     }

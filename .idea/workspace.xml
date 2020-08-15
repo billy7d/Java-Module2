@@ -21,6 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="263223ec-6b3c-4c61-94e1-4da7cbc2aa19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 3/btap_arrayList_linkedList_trong_Collection/out/production/btap_arrayList_linkedList_trong_Collection/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/btap_arrayList_linkedList_trong_Collection/out/production/btap_arrayList_linkedList_trong_Collection/ProductManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 3/btap_arrayList_linkedList_trong_Collection/src/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/btap_arrayList_linkedList_trong_Collection/src/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 3/caidat_thuattoan_sapxep_chon/out/production/caidat_thuattoan_sapxep_chon/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/caidat_thuattoan_sapxep_chon/out/production/caidat_thuattoan_sapxep_chon/SelectionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 3/caidat_thuattoan_sapxep_chon/src/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/caidat_thuattoan_sapxep_chon/src/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 3/insertionSort/src/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/insertionSort/src/InsertionSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week 4/Lesson 17/Copy_file_dung_luong_lon" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -153,6 +158,9 @@
       <workItem from="1596643065572" duration="49000" />
       <workItem from="1596643202656" duration="701000" />
       <workItem from="1596718195116" duration="108000" />
+      <workItem from="1597064911078" duration="41000" />
+      <workItem from="1597235732940" duration="1272000" />
+      <workItem from="1597493224274" duration="30000" />
     </task>
     <servers />
   </component>
@@ -185,11 +193,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1595776915468" />
-    <state x="1369" y="170" key="FileChooserDialogImpl" timestamp="1596718300171">
+    <state x="1369" y="170" key="FileChooserDialogImpl" timestamp="1597493253439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1095" y="135" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596427218500" />
-    <state x="1369" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596718300171" />
+    <state x="1369" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597493253439" />
     <state width="768" height="210" key="GridCell.Tab.0.bottom" timestamp="1595778859730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -210,10 +218,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="650" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596632481818" />
-    <state x="523" y="18" key="new project wizard" timestamp="1596718301538">
+    <state x="523" y="18" key="new project wizard" timestamp="1597239729679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="418" y="14" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1596427957420" />
-    <state x="523" y="18" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1596718301538" />
+    <state x="523" y="18" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1597239729679" />
   </component>
 </project>

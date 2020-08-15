@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class SelectionSort {
     static double[] list = {1, 9, 4.5, 6.6, 5.7, -4.5};
 
@@ -26,5 +28,6 @@ public class SelectionSort {
         for (int i = 0; i < list.length; i++)
             System.out.print(list[i] + " ");
     }
+
 }
 
