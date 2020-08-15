@@ -1,12 +1,13 @@
 import javax.crypto.spec.PSource;
 import java.io.*;
+import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.Scanner;
 
 public class Main {
     private static void copyFileUsingJava7Files(File source, File dest) throws IOException {
-        Files.copy(source.toPath(),dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(source.toPath(),dest.toPath(),StandardCopyOption.REPLACE_EXISTING);
     }
     private static void copyFileUsingStream(File source, File dest) throws  IOException{
         InputStream is =null;
@@ -16,10 +17,10 @@ public class Main {
             is = new FileInputStream(source);
             os = new FileOutputStream(dest);
 
-            int length;
+            int length =-1;
             byte[] buffer = new byte[1024];
 
-            while ((length = is.read(buffer))>0){
+            while ((length = is.read(buffer))!=-1){
                 os.write(buffer,0,length);
             }
 
