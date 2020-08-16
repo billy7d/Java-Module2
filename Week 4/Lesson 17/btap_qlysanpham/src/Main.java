@@ -16,18 +16,10 @@ public class Main {
         productManager.addProduct(arrayList, product2);
         productManager.addProduct(arrayList, product3);
 
-//        System.out.println(productManager.toString() +"\n");
 
-        for (Product i : arrayList) {
-            if (i.getProductName().equals("asd")) {
-                System.out.println(i);
-                break;
+        System.out.println(productManager.searchByProductPrice(arrayList,800));
 
-            } else
-                System.out.println("Not found");
-                break;
-        }
-
+        productManager.printProductList(productManager.newArrayList, "C:\\Users\\PC\\Desktop\\2.txt");
 
 
     }
