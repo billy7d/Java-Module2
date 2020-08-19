@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lesson 17/Copy_file_dung_luong_lon/Copy_file_dung_luong_lon.iml" filepath="$PROJECT_DIR$/Lesson 17/Copy_file_dung_luong_lon/Copy_file_dung_luong_lon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Week 4.iml" filepath="$PROJECT_DIR$/.idea/Week 4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson 16/[optional]tinh_tong_cac_so_file_text/[optional]tinh_tong_cac_so_file_text.iml" filepath="$PROJECT_DIR$/Lesson 16/[optional]tinh_tong_cac_so_file_text/[optional]tinh_tong_cac_so_file_text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson 16/btap_copyFileText/btap_copyFileText.iml" filepath="$PROJECT_DIR$/Lesson 16/btap_copyFileText/btap_copyFileText.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson 17/btap_qlysanpham/btap_qlysanpham.iml" filepath="$PROJECT_DIR$/Lesson 17/btap_qlysanpham/btap_qlysanpham.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson 16/doc_file_csv/doc_file_csv.iml" filepath="$PROJECT_DIR$/Lesson 16/doc_file_csv/doc_file_csv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson 17/optional_copy_binary_file/optional_copy_binary_file.iml" filepath="$PROJECT_DIR$/Lesson 17/optional_copy_binary_file/optional_copy_binary_file.iml" />
+    </modules>
+  </component>
+</project>
