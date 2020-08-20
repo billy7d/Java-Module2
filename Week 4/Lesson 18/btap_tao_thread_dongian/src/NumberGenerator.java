@@ -1,4 +1,6 @@
-public class NumberGenerator implements Runnable  {
+// public class NumberGenerator implements Runnable{}
+
+public class NumberGenerator extends Thread  {
 
     @Override
     public void run() {

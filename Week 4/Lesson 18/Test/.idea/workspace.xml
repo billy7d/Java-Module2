@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6737127-b3a2-447c-a3c7-37ed2d7014e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 2/java-cleancode-refactoring-exercise/java-cleancode-refactoring-exercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 2/java-cleancode-refactoring-exercise/java-cleancode-refactoring-exercise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 2/java-cleancode-refactoring-exercise/test/TennisGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 2/java-cleancode-refactoring-exercise/test/TennisGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 2/tinh_ketqua_FIzzBuzz/src/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 2/tinh_ketqua_FIzzBuzz/src/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 2/trienkhai_class_list_dongian/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 2/trienkhai_class_list_dongian/src/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/dem_map/out/production/dem_map/TreeMMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/dem_map/out/production/dem_map/TreeMMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/dem_map/src/TreeMMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/dem_map/src/TreeMMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/optional_queue_sudungmang/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/optional_queue_sudungmang/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/optional_queue_sudungmang/src/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/optional_queue_sudungmang/src/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/sudung_lop_ArrayIndexOutOfBoundsException/src/ArrayExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/sudung_lop_ArrayIndexOutOfBoundsException/src/ArrayExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/test/src/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/test/src/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/thanh_binarySearch_ko_dung_de_quy/out/production/thanh_binarySearch_ko_dung_de_quy/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/thanh_binarySearch_ko_dung_de_quy/out/production/thanh_binarySearch_ko_dung_de_quy/BinarySearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/thanh_binarySearch_ko_dung_de_quy/src/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/thanh_binarySearch_ko_dung_de_quy/src/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/thuat_toan_noi_bot/out/production/thuat_toan_noi_bot/BubbleSortByStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/thuat_toan_noi_bot/out/production/thuat_toan_noi_bot/BubbleSortByStep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 3/thuat_toan_noi_bot/src/BubbleSortByStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 3/thuat_toan_noi_bot/src/BubbleSortByStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesson 17/Thuchanh_racing_cars/src/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lesson 17/Thuchanh_racing_cars/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../btap_tao_thread_dongian/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../btap_tao_thread_dongian/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../btap_tao_thread_dongian/src/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../btap_tao_thread_dongian/src/NumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/src/JDBCConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/src/JDBCConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/src/ObjectPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/src/ObjectPool.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1gLLd3LamPHL416BYOpg6suIPV7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6737127-b3a2-447c-a3c7-37ed2d7014e0" name="Default Changelist" comment="" />
+      <created>1597889010552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597889010552</updated>
+      <workItem from="1597889011605" duration="707000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="958" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1597889310437">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="958" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597889310437" />
+    <state x="933" y="167" key="FileChooserDialogImpl" timestamp="1597889723958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597889723958" />
+    <state width="724" height="208" key="GridCell.Tab.0.bottom" timestamp="1597889724511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597889724511" />
+    <state width="724" height="208" key="GridCell.Tab.0.center" timestamp="1597889724511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597889724511" />
+    <state width="724" height="208" key="GridCell.Tab.0.left" timestamp="1597889724511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597889724511" />
+    <state width="724" height="208" key="GridCell.Tab.0.right" timestamp="1597889724511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597889724511" />
+  </component>
+</project>

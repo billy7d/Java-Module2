@@ -9,6 +9,7 @@ public class BinarySearch {
         while (high >= low) {
            int mid = low + (high - low) / 2;
 
+
            if (key == list[mid])
                 return mid;
 
@@ -23,7 +24,7 @@ public class BinarySearch {
 
 
     public static void main(String[] args) {
-
+        System.out.println(list.length);
         System.out.println(binarySearch(list, 11));
         System.out.println(binarySearch(list, 5));
     }

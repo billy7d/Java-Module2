@@ -1,17 +1,33 @@
-import java.util.HashMap;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Collections;
 
-public class Test {
-    public static void main(String[] args) {
-        HashMap<String, Integer> customers = new HashMap<>();
-        customers.put("John", 30);
-        customers.put("Mike", 28);
-        customers.put("Bill", 32);
-        customers.put("Maria", 27);
+class Simpson implements Comparable<Simpson> {
+    String name;
 
-        Set<String> keys = customers.keySet();
-        for (String key: keys){
-            System.out.println("Key: " + key + ": " + customers.get(key));
-        }
+    Simpson(String name) {
+        this.name = name;
     }
+
+    @Override
+    public int compareTo(Simpson simpson) {
+        return this.name.compareTo(simpson.name);
+    }
+}
+
+public class SimpsonSorting {
+
+    public static void main(String... sortingWithList) {
+        List<SimpsonCharacter> simpsons = new ArrayList<>();
+        simpsons.add(new SimpsonCharacter("Homer "));
+        simpsons.add(new SimpsonCharacter("Marge "));
+        simpsons.add(new SimpsonCharacter("Bart "));
+        simpsons.add(new SimpsonCharacter("Lisa "));
+
+        Collections.sort(simpsons);
+        simpsons.stream().map(s -> s.name).forEach(System.out::print);
+
+        Collections.reverse(simpsons);
+        simpsons.stream().forEach(System.out::print);
+    }
+
 }

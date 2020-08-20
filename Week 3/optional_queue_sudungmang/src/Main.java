@@ -1,2 +1,14 @@
-package PACKAGE_NAME;public class Main {
-}
+public class Main {
+    public static void main(String[] args) {
+        MyQueue queue = new MyQueue(4);
+        queue.enqueue(4);
+
+        queue.enqueue(56);
+        queue.enqueue(2);
+
+        queue.dequeue();
+
+        System.out.println(queue.toString());
+    }
+    }
+

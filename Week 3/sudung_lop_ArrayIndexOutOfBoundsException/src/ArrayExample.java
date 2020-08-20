@@ -3,6 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class ArrayExample {
+
     public Integer[] creatRandom(){
         Random rd = new Random();
         Integer[] arr = new Integer[100];
@@ -19,8 +20,10 @@ public class ArrayExample {
         Integer[] arr = arrayExample.creatRandom();
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("\nVui lòng nhập chỉ số của một phần tử bất kỳ: ");
         int x = scanner.nextInt();
+
         try{
             System.out.println("Giá trị của phần tử có chỉ số " + x + " là " + arr[x]);
         } catch (IndexOutOfBoundsException e){

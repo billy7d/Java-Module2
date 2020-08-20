@@ -13,7 +13,7 @@ public class FizzBuzz {
 
     public static int getInputNumberUnit(int numb){
         if (numb>0&&numb<10) return numb;
-        else return numb%10;
+        else return numb;
 
     }
     public static int getInputNumberDozen(int numb){
