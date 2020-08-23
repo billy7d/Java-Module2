@@ -1,22 +1,26 @@
-import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class StudentMark implements IStudentMark {
     private String fullName;
     private int id;
     private String className;
     private int semester;
-    private float averageMark;
-    double[] subjectMarkList = new double[5];
+    private double averageMark;
+    float[] subjectMarkList = new float[5];
 
 
+    public StudentMark(){}
 
     public StudentMark (String fullName,String className, int semester,
-                       double subjectMark1, double subjectMark2,
-                       double subjectMark3,double subjectMark4,double subjectMark5){
+                       float subjectMark1, float subjectMark2,
+                       float subjectMark3,float subjectMark4,float subjectMark5){
 
+        this.id = ++this.id;
         this.fullName = fullName;
         this.className = className;
         this.semester = semester;
+        this.averageMark = aveCal();
+
         setSubjectMarkList(subjectMark1,subjectMark2,subjectMark3,subjectMark4,subjectMark5);
 
     }
@@ -54,7 +58,7 @@ public class StudentMark implements IStudentMark {
     }
 
     public float getAverageMark() {
-        return averageMark;
+        return aveCal();
     }
 
     public void setAverageMark(float averageMark) {
@@ -64,22 +68,18 @@ public class StudentMark implements IStudentMark {
 
     @Override
     public void Display() {
-        System.out.println(getFullName());
-        System.out.println(getId());
-        System.out.println(getClassName());
-        System.out.println(getSemester());
-        System.out.println(getAverageMark());
+        System.out.println(getFullName()+", "+getId()+", "+getClassName()+", "+getSemester()+", "+getAverageMark());
     }
 
 
 
-    public void setSubjectMarkList(double subjectMark1, double subjectMark2,
-                                   double subjectMark3, double subjectMark4, double subjectMark5) {
-        this.subjectMarkList = new double[]{subjectMark1,subjectMark2,subjectMark3,subjectMark4,subjectMark5};
+    public void setSubjectMarkList(float subjectMark1, float subjectMark2,
+                                   float subjectMark3, float subjectMark4, float subjectMark5) {
+        this.subjectMarkList = new float[]{subjectMark1,subjectMark2,subjectMark3,subjectMark4,subjectMark5};
     }
 
-    public double avaCal(){
-        double sumElements = 0;
+    public float aveCal(){
+        float sumElements = 0;
         for (int i = 0; i < subjectMarkList.length; i++) {
             sumElements += subjectMarkList[i];
         }
@@ -87,11 +87,15 @@ public class StudentMark implements IStudentMark {
     }
 
 
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "StudentMark{" +
+                "fullName='" + fullName + '\'' +
+                ", id=" + id +
+                ", className='" + className + '\'' +
+                ", semester=" + semester +
+                ", subjectMarkList=" + Arrays.toString(subjectMarkList) +
+                ", AverageMark=" + getAverageMark() +
+                '}';
+    }
 }
