@@ -8,8 +8,8 @@ public class View {
         StudentMark studentMark = new StudentMark();
         List<StudentMark> studentMarkInstance = new ArrayList<>();
 
-        int choice;
-        int subMenuChoice;
+        String choice;
+        String subMenuChoice;
         int ID = 1;
         do {
             System.out.println("-------");
@@ -22,14 +22,18 @@ public class View {
 
 
             System.out.print("Chose action: ");
-            choice = scanner.nextInt();
+            choice = scanner.nextLine();
+
 
             switch (choice) {
-                case 1:
+                case "1":
+
                     System.out.print("Input Student's name: ");
-                    String fullName = scanner.next();
+                    String fullName = scanner.nextLine();
+
                     System.out.print("Input Student's class name: ");
-                    String className = scanner.next();
+                    String className = scanner.nextLine();
+
                     System.out.print("Input Student's semester(by number): ");
                     int semester = scanner.nextInt();
                     System.out.print("Input Student's mark of Subject 1 (by number): ");
@@ -52,7 +56,7 @@ public class View {
                     studentMarkInstance.add(studentMark);
 
                     break;
-                case 2:
+                case "2":
                     for (Object i : studentMarkInstance) {
                         System.out.println(i.toString());
 
@@ -60,7 +64,7 @@ public class View {
                     studentMark.display();
                     break;
 
-                case 3:
+                case "3":
                     do {
                         System.out.println("-------");
                         System.out.println(" ");
@@ -74,67 +78,76 @@ public class View {
                         System.out.println("8. Edit Student mark of 5th Subject: ");
                         System.out.println("0. Go Back ");
 
-                        subMenuChoice = scanner.nextInt();
+                        System.out.print("Chose action: ");
+                        subMenuChoice = scanner.nextLine();
 
                         switch (subMenuChoice) {
-                            case 1:
+                            case "1":
                                 System.out.print("Input Student ID to edit: ");
                                 int id = scanner.nextInt();
+                                scanner.nextLine();
                                 System.out.print("Input Student name to edit: ");
-                                String name = scanner.next();
+                                String name = scanner.nextLine();
                                 studentMark.editName(studentMarkInstance, id, name);
                                 break;
 
-                            case 2:
+                            case "2":
                                 System.out.print("Input Student ID to edit: ");
                                 int id2 = scanner.nextInt();
+                                scanner.nextLine();
                                 System.out.println("Input new class name: ");
-                                String className1 = scanner.next();
+                                String className1 = scanner.nextLine();
                                 studentMark.editClassName(studentMarkInstance, id2, className1);
                                 break;
-                            case 3:
+                            case "3":
                                 System.out.print("Input Student ID to edit: ");
                                 int id3 = scanner.nextInt();
+                                scanner.nextLine();
                                 System.out.println("Intput new class semester: ");
                                 int newSemester = scanner.nextInt();
                                 studentMark.editSemester(studentMarkInstance, id3, newSemester);
                                 break;
-                            case 4:
+                            case "4":
                                 System.out.print("Input Student ID to edit: ");
                                 int id4 = scanner.nextInt();
+                                scanner.nextLine();
                                 System.out.println("Intput new Subject 1st mark: ");
                                 float newSubjectMark1 = scanner.nextFloat();
                                 studentMark.editSubjectMark_1(studentMarkInstance, id4, newSubjectMark1);
                                 break;
-                            case 5:
+                            case "5":
                                 System.out.print("Input Student ID to edit: ");
                                 int id5 = scanner.nextInt();
+                                scanner.nextLine();
                                 System.out.println("Intput new Subject 2nd mark: ");
                                 float newSubjectMark2 = scanner.nextFloat();
                                 studentMark.editSubjectMark_2(studentMarkInstance, id5, newSubjectMark2);
                                 break;
-                            case 6:
+                            case "6":
                                 System.out.print("Input Student ID to edit: ");
                                 int id6 = scanner.nextInt();
+                                scanner.nextLine();
                                 System.out.println("Intput new Subject 3rd mark: ");
                                 float newSubjectMark3 = scanner.nextFloat();
                                 studentMark.editSubjectMark_3(studentMarkInstance, id6, newSubjectMark3);
                                 break;
-                            case 7:
+                            case "7":
                                 System.out.print("Input Student ID to edit: ");
                                 int id7 = scanner.nextInt();
+                                scanner.nextLine();
                                 System.out.println("Intput new Subject 4th mark: ");
                                 float newSubjectMark4 = scanner.nextFloat();
                                 studentMark.editSubjectMark_4(studentMarkInstance, id7, newSubjectMark4);
                                 break;
-                            case 8:
+                            case "8":
                                 System.out.print("Input Student ID to edit: ");
                                 int id8 = scanner.nextInt();
+                                scanner.nextLine();
                                 System.out.println("Intput new Subject 5th mark: ");
                                 float newSubjectMark5 = scanner.nextFloat();
                                 studentMark.editSubjectMark_5(studentMarkInstance, id8, newSubjectMark5);
                                 break;
-                            case 0:
+                            case "0":
 
                                 break;
 
@@ -147,10 +160,10 @@ public class View {
                         break;
 
 
-                    } while (subMenuChoice != 0);
+                    } while (!subMenuChoice.equals("0"));
 
 
-                case 0:
+                case "0":
                     break;
 
 
@@ -162,7 +175,7 @@ public class View {
 
             }
         }
-            while (choice != 0) ;
+            while (!choice.equals( "0")) ;
 
         }
 
