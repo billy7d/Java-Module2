@@ -1,3 +1,4 @@
 public interface IStudentMark {
-    void Display();
+    void display();
+
 }
