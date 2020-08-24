@@ -134,17 +134,14 @@ public class View {
                                 float newSubjectMark5 = scanner.nextFloat();
                                 studentMark.editSubjectMark_5(studentMarkInstance, id8, newSubjectMark5);
                                 break;
-                            default:
-                                if (subMenuChoice == 0)
-                                    System.out.println(" ");
+                            case 0:
 
-                                else if (subMenuChoice != 0 || subMenuChoice != 1 || subMenuChoice != 2 || subMenuChoice != 3
-                                        || subMenuChoice != 4 || subMenuChoice != 5 || subMenuChoice != 6
-                                        || subMenuChoice != 7 || subMenuChoice != 8) {
-                                        System.out.println("Invalid option !!! ");
-                                }
                                 break;
 
+                            default:
+
+                                System.out.println("Invalid option !!! ");
+                                break;
                         }
 
                         break;
@@ -153,13 +150,14 @@ public class View {
                     } while (subMenuChoice != 0);
 
 
-                default:
-                    if (choice == 0)
-                        System.out.println(" ");
-                    else if (choice != 0 || choice != 1 || choice != 2 || choice != 3) {
-                        System.out.println("Invalid option !!! ");
-                    }
+                case 0:
                     break;
+
+
+                default:
+                    System.out.println("Invalid option !!! ");
+
+
 
 
             }
