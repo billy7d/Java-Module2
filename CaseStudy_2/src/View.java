@@ -9,11 +9,13 @@ public class View {
         StudentMark studentMark = new StudentMark();
         List<StudentMark> studentMarkInstance = new ArrayList<>();
         IOFile ioFile = new IOFile();
-        studentMarkInstance = ioFile.readFile();
+
+        int id1 = studentMark.checkId(studentMarkInstance);
+
 
         String choice;
         String subMenuChoice;
-        int ID = 1;
+
 
         do {
             System.out.println("-------");
@@ -22,6 +24,7 @@ public class View {
             System.out.println("1. Insert new Student");
             System.out.println("2. View list of Student & each of Average Mark");
             System.out.println("3. Edit: ");
+            System.out.println("4. Read data from previous run time");
             System.out.println("0. Exit Application");
 
 
@@ -51,10 +54,10 @@ public class View {
                     System.out.print("Input Student's mark of Subject 5 (by number): ");
                     float subjectMark5 = scanner.nextFloat();
 
-                    studentMark = new StudentMark(ID, fullName, className, semester, subjectMark1, subjectMark2,
+                    studentMark = new StudentMark(id1, fullName, className, semester, subjectMark1, subjectMark2,
                             subjectMark3, subjectMark4, subjectMark5);
 
-                    ID++;
+
 
 
                     studentMarkInstance.add(studentMark);
@@ -165,6 +168,11 @@ public class View {
 
 
                     } while (!subMenuChoice.equals("0"));
+                    break;
+
+                case "4":
+                    studentMarkInstance = ioFile.readFile();
+                    break;
 
 
                 case "0":
@@ -176,14 +184,15 @@ public class View {
                     System.out.println("Invalid option !!! ");
 
 
-
-
             }
         }
-            while (!choice.equals( "0")) ;
-
-        }
+        while (!choice.equals("0"));
 
     }
+
+
+
+}
+
 
 

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class StudentMark implements IStudentMark, Serializable {
     private String fullName;
-    private int id =0;
+    private int id;
     private String className;
     private int semester;
     private double averageMark;
@@ -161,12 +161,22 @@ public class StudentMark implements IStudentMark, Serializable {
         }
     }
 
+    public int checkId(List<StudentMark>list) {
+            int count =0;
+        for (StudentMark i : list) {
+            if (i.getId()>count)
+                    count=getId();
+        }
+        return ++count;
+    }
 
-    @Override
+
+
+        @Override
     public String toString() {
         return "StudentMark{" +
                 "fullName='" + fullName + '\'' +
-                ", id=" + id +
+                ", id=" + this.id +
                 ", className='" + className + '\'' +
                 ", semester=" + semester +
                 ", subjectMarkList=" + Arrays.toString(subjectMarkList) +
