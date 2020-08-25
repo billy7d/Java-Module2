@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -10,7 +9,7 @@ public class View {
         StudentMark studentMark = new StudentMark();
         MenuService menuService = new MenuService();
         List<StudentMark> studentMarkInstance = new ArrayList<>();
-        IOFile ioFile = new IOFile();
+        MenuService.IOFile ioFile = new MenuService.IOFile();
         int ID = 0;
 
         try{

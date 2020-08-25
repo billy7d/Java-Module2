@@ -91,7 +91,7 @@ public class StudentMark implements IStudentMark, Serializable {
 
     @Override
     public void display() {
-        System.out.println("Full name: "+getFullName()+", Student id: "+getId()+", Student class name: "+getClassName()+", Semester: "+getSemester()+", Average mark: "+getAverageMark());
+        System.out.println("Recently add item = Full name: "+getFullName()+", Student id: "+getId()+", Student class name: "+getClassName()+", Semester: "+getSemester()+", Average mark: "+getAverageMark());
     }
 
 
