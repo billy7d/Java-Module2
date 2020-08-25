@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -7,10 +8,18 @@ public class View {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         StudentMark studentMark = new StudentMark();
+        MenuService menuService = new MenuService();
         List<StudentMark> studentMarkInstance = new ArrayList<>();
         IOFile ioFile = new IOFile();
+        int ID = 0;
 
-        int id1 = studentMark.checkId(studentMarkInstance);
+        try{
+            studentMarkInstance = ioFile.readFile();
+        } catch (NullPointerException ignored){
+
+        }
+
+
 
 
         String choice;
@@ -24,7 +33,7 @@ public class View {
             System.out.println("1. Insert new Student");
             System.out.println("2. View list of Student & each of Average Mark");
             System.out.println("3. Edit: ");
-            System.out.println("4. Read data from previous run time");
+            System.out.println("4. Delete subject mark");
             System.out.println("0. Exit Application");
 
 
@@ -54,15 +63,13 @@ public class View {
                     System.out.print("Input Student's mark of Subject 5 (by number): ");
                     float subjectMark5 = scanner.nextFloat();
 
-                    studentMark = new StudentMark(id1, fullName, className, semester, subjectMark1, subjectMark2,
+                    studentMark = new StudentMark(menuService.checkId(studentMarkInstance), fullName, className, semester, subjectMark1, subjectMark2,
                             subjectMark3, subjectMark4, subjectMark5);
-
-
-
+                    ID++;
 
                     studentMarkInstance.add(studentMark);
-
                     break;
+
                 case "2":
                     for (Object i : studentMarkInstance) {
                         System.out.println(i.toString());
@@ -95,7 +102,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.print("Input Student name to edit: ");
                                 String name = scanner.nextLine();
-                                studentMark.editName(studentMarkInstance, id, name);
+                                menuService.editName(studentMarkInstance, id, name);
                                 break;
 
                             case "2":
@@ -104,7 +111,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Input new class name: ");
                                 String className1 = scanner.nextLine();
-                                studentMark.editClassName(studentMarkInstance, id2, className1);
+                                menuService.editClassName(studentMarkInstance, id2, className1);
                                 break;
                             case "3":
                                 System.out.print("Input Student ID to edit: ");
@@ -112,7 +119,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Intput new class semester: ");
                                 int newSemester = scanner.nextInt();
-                                studentMark.editSemester(studentMarkInstance, id3, newSemester);
+                                menuService.editSemester(studentMarkInstance, id3, newSemester);
                                 break;
                             case "4":
                                 System.out.print("Input Student ID to edit: ");
@@ -120,7 +127,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Intput new Subject 1st mark: ");
                                 float newSubjectMark1 = scanner.nextFloat();
-                                studentMark.editSubjectMark_1(studentMarkInstance, id4, newSubjectMark1);
+                                menuService.editSubjectMark_1(studentMarkInstance, id4, newSubjectMark1);
                                 break;
                             case "5":
                                 System.out.print("Input Student ID to edit: ");
@@ -128,7 +135,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Intput new Subject 2nd mark: ");
                                 float newSubjectMark2 = scanner.nextFloat();
-                                studentMark.editSubjectMark_2(studentMarkInstance, id5, newSubjectMark2);
+                                menuService.editSubjectMark_2(studentMarkInstance, id5, newSubjectMark2);
                                 break;
                             case "6":
                                 System.out.print("Input Student ID to edit: ");
@@ -136,7 +143,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Intput new Subject 3rd mark: ");
                                 float newSubjectMark3 = scanner.nextFloat();
-                                studentMark.editSubjectMark_3(studentMarkInstance, id6, newSubjectMark3);
+                                menuService.editSubjectMark_3(studentMarkInstance, id6, newSubjectMark3);
                                 break;
                             case "7":
                                 System.out.print("Input Student ID to edit: ");
@@ -144,7 +151,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Intput new Subject 4th mark: ");
                                 float newSubjectMark4 = scanner.nextFloat();
-                                studentMark.editSubjectMark_4(studentMarkInstance, id7, newSubjectMark4);
+                                menuService.editSubjectMark_4(studentMarkInstance, id7, newSubjectMark4);
                                 break;
                             case "8":
                                 System.out.print("Input Student ID to edit: ");
@@ -152,7 +159,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Intput new Subject 5th mark: ");
                                 float newSubjectMark5 = scanner.nextFloat();
-                                studentMark.editSubjectMark_5(studentMarkInstance, id8, newSubjectMark5);
+                                menuService.editSubjectMark_5(studentMarkInstance, id8, newSubjectMark5);
                                 break;
                             case "0":
 
@@ -171,7 +178,11 @@ public class View {
                     break;
 
                 case "4":
-                    studentMarkInstance = ioFile.readFile();
+                    System.out.println("Input an id of student mark to delete");
+                    int id4 = scanner.nextInt();
+                    scanner.nextLine();
+                    menuService.remove(studentMarkInstance,id4);
+
                     break;
 
 

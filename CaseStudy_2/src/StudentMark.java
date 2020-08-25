@@ -1,7 +1,6 @@
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+
 
 public class StudentMark implements IStudentMark, Serializable {
     private String fullName;
@@ -94,82 +93,6 @@ public class StudentMark implements IStudentMark, Serializable {
     public void display() {
         System.out.println("Full name: "+getFullName()+", Student id: "+getId()+", Student class name: "+getClassName()+", Semester: "+getSemester()+", Average mark: "+getAverageMark());
     }
-
-
-    public void editName(List<StudentMark> list, int id, String name) {
-        for (StudentMark i: list){
-            if (i.getId() == id){
-                i.setFullName(name);
-                break;
-            }
-        }
-    }
-    public void editClassName(List<StudentMark> list,int id,String className) {
-        for (StudentMark i: list){
-            if (i.getId() == id){
-                i.setClassName(className);
-                break;
-            }
-        }
-    }
-    public void editSemester(List<StudentMark> list,int id,int semester) {
-        for (StudentMark i: list){
-            if (i.getId() == id){
-                i.setSemester(semester);
-                break;
-            }
-        }
-    }
-    public void editSubjectMark_1(List<StudentMark> list,int id,float mark1) {
-        for (StudentMark i: list){
-            if (i.getId() == id){
-                getSubjectMarkList()[0] = mark1;
-                break;
-            }
-        }
-    }
-    public void editSubjectMark_2(List<StudentMark> list,int id,float mark2) {
-        for (StudentMark i: list){
-            if (i.getId() == id){
-                getSubjectMarkList()[1] = mark2;
-                break;
-            }
-        }
-    }
-    public void editSubjectMark_3(List<StudentMark> list,int id,float mark3) {
-        for (StudentMark i: list){
-            if (i.getId() == id){
-                getSubjectMarkList()[2] = mark3;
-                break;
-            }
-        }
-    }
-    public void editSubjectMark_4(List<StudentMark> list,int id,float mark4) {
-        for (StudentMark i: list){
-            if (i.getId() == id){
-                getSubjectMarkList()[3] = mark4;
-                break;
-            }
-        }
-    }
-    public void editSubjectMark_5(List<StudentMark> list,int id,float mark5) {
-        for (StudentMark i: list){
-            if (i.getId() == id){
-                getSubjectMarkList()[4] = mark5;
-                break;
-            }
-        }
-    }
-
-    public int checkId(List<StudentMark>list) {
-            int count =0;
-        for (StudentMark i : list) {
-            if (i.getId()>count)
-                    count=getId();
-        }
-        return ++count;
-    }
-
 
 
         @Override
