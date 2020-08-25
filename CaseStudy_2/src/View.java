@@ -1,16 +1,20 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class View {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         StudentMark studentMark = new StudentMark();
         List<StudentMark> studentMarkInstance = new ArrayList<>();
+        IOFile ioFile = new IOFile();
+        studentMarkInstance = ioFile.readFile();
 
         String choice;
         String subMenuChoice;
         int ID = 1;
+
         do {
             System.out.println("-------");
             System.out.println(" ");
@@ -164,6 +168,7 @@ public class View {
 
 
                 case "0":
+                    ioFile.writeFile(studentMarkInstance);
                     break;
 
 

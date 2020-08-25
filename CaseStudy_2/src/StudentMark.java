@@ -1,15 +1,16 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class StudentMark implements IStudentMark {
+public class StudentMark implements IStudentMark, Serializable {
     private String fullName;
     private int id =0;
     private String className;
     private int semester;
     private double averageMark;
     float[] subjectMarkList = new float[5];
-    private int count = 0;
+
 
 
     public StudentMark(){}
