@@ -81,6 +81,8 @@ public class HoDan {
         }
     }
 
+
+
     public List<Nguoi> getListOf80(List<Nguoi> list) {
         List<Nguoi> agesOf80 = new ArrayList<>();
         for (Nguoi i : list) {
@@ -98,8 +100,11 @@ public class HoDan {
     @Override
     public String toString() {
         return "HoDan{" +
-                "thanhVienTrongHo=" + soThanhVienTrongHo +
+                "idHodan=" + idHodan +
+                ", soThanhVienTrongHo=" + soThanhVienTrongHo +
                 ", soNha='" + soNha + '\'' +
+                ", nguois=" + nguois +
                 '}';
     }
+
 }

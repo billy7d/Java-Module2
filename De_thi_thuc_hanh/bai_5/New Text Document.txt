@@ -1,0 +1,3 @@
+-Thêm người thì tự động thêm vào hộ dân mà chưa phân biệt hộ dân với cần thêm hộ dân nào.
+-Để choice 1 trong menu tạo hộ dân trước rồi tạo từng số người trong hộ dân thêm vào hộ sau.
+
