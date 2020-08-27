@@ -11,17 +11,17 @@ public class KhuPho {
         list.add(hoDan);
     }
 
-    public void editSoNguoiTrongHo(List<HoDan> list,String soNha,int newSoNguoi){
+    public void editSoNguoiTrongHo(List<HoDan> list,int id,int newSoNguoi){
         for (HoDan i:list){
-            if (i.getSoNha().equals(soNha)){
+            if (i.getIdHodan()==id){
                 i.setThanhVienTrongHo(newSoNguoi);
             }
         }
     }
 
-    public void editSoNha(List<HoDan> list,String soNha,int newSoNguoi){
+    public void editSoNha(List<HoDan> list,int id, String soNha){
         for (HoDan i:list){
-            if (i.getThanhVienTrongHo()==newSoNguoi){
+            if (i.getIdHodan()==id){
                 i.setSoNha(soNha);
             }
         }

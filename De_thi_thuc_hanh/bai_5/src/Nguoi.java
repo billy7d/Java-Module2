@@ -2,13 +2,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Nguoi {
+    private int id;
     private String hoVaTen;
     private String ngaySinhCaNhan;
     private String ngheNghiep;
 
     public Nguoi(){}
 
-    public Nguoi(String hoVaTen, String ngaySinhCaNhan,String ngheNghiep){
+    public Nguoi(int id,String hoVaTen, String ngaySinhCaNhan,String ngheNghiep){
+        this.id = id;
         this.hoVaTen = hoVaTen;
         this.ngaySinhCaNhan = ngaySinhCaNhan;
         this.ngheNghiep = ngheNghiep;
@@ -38,10 +40,23 @@ public class Nguoi {
         this.ngheNghiep = ngheNghiep;
     }
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
-
-
+    @Override
+    public String toString() {
+        return "Nguoi{" +
+                "id=" + id +
+                ", hoVaTen='" + hoVaTen + '\'' +
+                ", ngaySinhCaNhan='" + ngaySinhCaNhan + '\'' +
+                ", ngheNghiep='" + ngheNghiep + '\'' +
+                '}';
+    }
 }
 
 
