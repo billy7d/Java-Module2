@@ -14,7 +14,7 @@ public class KhuPho {
     public void editSoNguoiTrongHo(List<HoDan> list,int id,int newSoNguoi){
         for (HoDan i:list){
             if (i.getIdHodan()==id){
-                i.setThanhVienTrongHo(newSoNguoi);
+                i.setSoThanhVienTrongHo(newSoNguoi);
             }
         }
     }

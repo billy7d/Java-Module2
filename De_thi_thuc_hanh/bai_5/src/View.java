@@ -25,67 +25,7 @@ public class View {
             scanner.nextLine();
 
             switch (choiceMenu){
-                case 2:
-                    do {
-                        System.out.println("1. Add Ho dan: ");
-                        System.out.println("2. Sua so nha Ho dan: ");
-                        System.out.println("3. Sua so thanh vien Ho dan");
-                        System.out.println("4. Print tat ca Ho dan: ");
-                        System.out.println("5. Print Ho dan co nguoi tren 80 tuoi: ");
-                        System.out.println("0. Go back");
 
-                        choiceHoDan= scanner.nextInt();
-
-                        scanner.nextLine();
-
-                        switch (choiceHoDan){
-                            case 1:
-                                System.out.println("So thanh vien trong ho: ");
-                                int soNguoiTrongHo= scanner.nextInt();
-                                scanner.nextLine();
-                                System.out.println("Nhap so nha cua ho: ");
-                                String soNha = scanner.nextLine();
-                                hoDan = new HoDan(idHoDan,soNguoiTrongHo,soNha);
-                                khuPho.addHoDan(hoDans,hoDan);
-                                idHoDan++;
-                                break;
-                            case 2:
-                                System.out.println("Nhap id cua ho dan can sua so nha: ");
-                                int idHoDan1 = scanner.nextInt();
-                                scanner.nextLine();
-                                System.out.println("Nhap so nha moi: ");
-                                String soNhaMoi = scanner.nextLine();
-                                khuPho.editSoNha(hoDans,idHoDan1,soNhaMoi);
-                                break;
-
-                            case 3:
-                                System.out.println("Nhap id cua ho dan can sua so nha: ");
-                                int idHoDan2 = scanner.nextInt();
-                                scanner.nextLine();
-                                System.out.println("Nhap so thanh vien can thay doi: ");
-                                int soThanhVienThayDoi = scanner.nextInt();
-                                scanner.nextLine();
-                                khuPho.editSoNguoiTrongHo(hoDans,idHoDan2,soThanhVienThayDoi);
-                                break;
-
-                            case 4:
-                                for (HoDan i:hoDans){
-                                    System.out.println(i.toString());
-                                }
-                                break;
-
-                            case 5:
-                                for (Nguoi i :  hoDan.getListOf80(nguois)){
-                                    System.out.println(i.toString());
-                                }
-                                break;
-
-
-                        }
-
-
-                    }while (choiceHoDan !=0);
-                    break;
                 case 1:
                     do {
                         System.out.println("1. Add nguoi: ");
@@ -142,6 +82,67 @@ public class View {
                         }
 
                     }while (choiceNguoi!=0);
+                    break;
+                case 2:
+                    do {
+                        System.out.println("1. Add Ho dan: ");
+                        System.out.println("2. Sua so nha Ho dan: ");
+                        System.out.println("3. Sua so thanh vien Ho dan");
+                        System.out.println("4. Print tat ca Ho dan: ");
+                        System.out.println("5. Print Ho dan co nguoi tren 80 tuoi: ");
+                        System.out.println("0. Go back");
+
+                        choiceHoDan= scanner.nextInt();
+
+                        scanner.nextLine();
+
+                        switch (choiceHoDan){
+                            case 1:
+                                System.out.println("So thanh vien trong ho: ");
+                                int soNguoiTrongHo= scanner.nextInt();
+                                scanner.nextLine();
+                                System.out.println("Nhap so nha cua ho: ");
+                                String soNha = scanner.nextLine();
+                                hoDan = new HoDan(idHoDan,soNguoiTrongHo,soNha,nguois);
+                                khuPho.addHoDan(hoDans,hoDan);
+                                idHoDan++;
+                                break;
+                            case 2:
+                                System.out.println("Nhap id cua ho dan can sua so nha: ");
+                                int idHoDan1 = scanner.nextInt();
+                                scanner.nextLine();
+                                System.out.println("Nhap so nha moi: ");
+                                String soNhaMoi = scanner.nextLine();
+                                khuPho.editSoNha(hoDans,idHoDan1,soNhaMoi);
+                                break;
+
+                            case 3:
+                                System.out.println("Nhap id cua ho dan can sua so nha: ");
+                                int idHoDan2 = scanner.nextInt();
+                                scanner.nextLine();
+                                System.out.println("Nhap so thanh vien can thay doi: ");
+                                int soThanhVienThayDoi = scanner.nextInt();
+                                scanner.nextLine();
+                                khuPho.editSoNguoiTrongHo(hoDans,idHoDan2,soThanhVienThayDoi);
+                                break;
+
+                            case 4:
+                                for (HoDan i:hoDans){
+                                    System.out.println(i.toString());
+                                }
+                                break;
+
+                            case 5:
+                                for (Nguoi i :  hoDan.getListOf80(nguois)){
+                                    System.out.println(i.toString());
+                                }
+                                break;
+
+
+                        }
+
+
+                    }while (choiceHoDan !=0);
                     break;
             }
 

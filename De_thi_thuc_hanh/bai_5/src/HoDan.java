@@ -3,27 +3,37 @@ import java.util.List;
 
 public class HoDan {
     private int idHodan;
-    private int thanhVienTrongHo;
+    private int soThanhVienTrongHo;
     private String soNha;
+    private List<Nguoi> nguois = new ArrayList<>();
 
 
     public HoDan() {
 
     }
 
-    public HoDan(int id, int thanhVienTrongHo, String soNha) {
+    public HoDan(int id, int thanhVienTrongHo, String soNha,List<Nguoi> nguois) {
         this.idHodan = id;
-        this.thanhVienTrongHo = thanhVienTrongHo;
+        this.soThanhVienTrongHo = thanhVienTrongHo;
         this.soNha = soNha;
+        this.nguois = nguois;
 
     }
 
-    public int getThanhVienTrongHo() {
-        return thanhVienTrongHo;
+    public List<Nguoi> getNguois() {
+        return nguois;
     }
 
-    public void setThanhVienTrongHo(int thanhVienTrongHo) {
-        this.thanhVienTrongHo = thanhVienTrongHo;
+    public void setNguois(List<Nguoi> nguois) {
+        this.nguois = nguois;
+    }
+
+    public int getSoThanhVienTrongHo() {
+        return soThanhVienTrongHo;
+    }
+
+    public void setSoThanhVienTrongHo(int soThanhVienTrongHo) {
+        this.soThanhVienTrongHo = soThanhVienTrongHo;
     }
 
     public String getSoNha() {
@@ -88,7 +98,7 @@ public class HoDan {
     @Override
     public String toString() {
         return "HoDan{" +
-                "thanhVienTrongHo=" + thanhVienTrongHo +
+                "thanhVienTrongHo=" + soThanhVienTrongHo +
                 ", soNha='" + soNha + '\'' +
                 '}';
     }
