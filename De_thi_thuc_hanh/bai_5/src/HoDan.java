@@ -5,28 +5,28 @@ public class HoDan {
     private int idHodan;
     private int soThanhVienTrongHo;
     private String soNha;
-    private List<Nguoi> nguois = new ArrayList<>();
+    private List<Nguoi> nguoiTrongHoDan = new ArrayList<>();
 
 
     public HoDan() {
 
     }
 
-    public HoDan(int id, int thanhVienTrongHo, String soNha,List<Nguoi> nguois) {
+    public HoDan(int id, int soThanhVienTrongHo, String soNha,List<Nguoi> nguoiTrongHoDan) {
         this.idHodan = id;
-        this.soThanhVienTrongHo = thanhVienTrongHo;
+        this.soThanhVienTrongHo = soThanhVienTrongHo;
         this.soNha = soNha;
-        this.nguois = nguois;
+        this.nguoiTrongHoDan = nguoiTrongHoDan;
 
     }
 
-    public List<Nguoi> getNguois() {
-        return nguois;
+    public List<Nguoi> getNguoiTrongHoDan() {
+        return nguoiTrongHoDan;
+    }
+    public void setNguoiTrongHoDan(List<Nguoi> nguoiTrongHoDan) {
+        this.nguoiTrongHoDan = nguoiTrongHoDan;
     }
 
-    public void setNguois(List<Nguoi> nguois) {
-        this.nguois = nguois;
-    }
 
     public int getSoThanhVienTrongHo() {
         return soThanhVienTrongHo;
@@ -57,9 +57,25 @@ public class HoDan {
         list.add(nguoi);
     }
 
+    public void setNguoiNaoTrongHoDan(List<HoDan> hoDans,List<Nguoi> nguois){
+        for (HoDan hoDan: hoDans){
+            for (Nguoi nguoi: nguois){
+                if (nguoi.getIdHoDan()==hoDan.getIdHodan()){
+                    nguoiTrongHoDan.add(nguoi);
+                }
+            }
+        }
+    }
+
+    public List<Nguoi> getNguoiNaoTrongHoDan(){
+        return nguoiTrongHoDan;
+    }
+
+
+
     public void editHoVaTen(List<Nguoi> list, int id, String hoVaTen) {
         for (Nguoi i : list) {
-            if (i.getId() == id) {
+            if (i.getIdCaNhan() == id) {
                 i.setHoVaTen(hoVaTen);
             }
         }
@@ -67,7 +83,7 @@ public class HoDan {
 
     public void editNgaySinh(List<Nguoi> list,int id, String ngaySinhCaNhan) {
         for (Nguoi i : list) {
-            if (i.getId() == id) {
+            if (i.getIdCaNhan() == id) {
                 i.setNgaySinhCaNhan(ngaySinhCaNhan);
             }
         }
@@ -75,7 +91,7 @@ public class HoDan {
 
     public void editNgheNghiep(List<Nguoi> list, int id, String ngheNghiep) {
         for (Nguoi i : list) {
-            if (i.getId() == id) {
+            if (i.getIdCaNhan() == id) {
                 i.setNgheNghiep(ngheNghiep);
             }
         }
@@ -97,14 +113,14 @@ public class HoDan {
 
     }
 
+
     @Override
     public String toString() {
         return "HoDan{" +
                 "idHodan=" + idHodan +
                 ", soThanhVienTrongHo=" + soThanhVienTrongHo +
                 ", soNha='" + soNha + '\'' +
-                ", nguois=" + nguois +
+                ", nguoiTrongHoDan=" + nguoiTrongHoDan +
                 '}';
     }
-
 }

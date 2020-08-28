@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class View {
     public static void main(String[] args) {
-        List<Nguoi> nguois = new ArrayList<>();
-        List<HoDan> hoDans = new ArrayList<>();
+        List<Nguoi> listNguois = new ArrayList<>();
+        List<HoDan> listHoDans = new ArrayList<>();
         Nguoi nguoi;
         HoDan hoDan = new HoDan();
         KhuPho khuPho = new KhuPho();
@@ -13,7 +13,7 @@ public class View {
         int choiceHoDan;
         int choiceNguoi;
         int id =1;
-        int idHoDan = 10;
+        int idHoDan =1;
         Scanner scanner = new Scanner(System.in);
         do{
             System.out.println("1. Nguoi: ");
@@ -47,9 +47,16 @@ public class View {
                                 String dob = scanner.nextLine();
                                 System.out.println("Nghe nghiep: ");
                                 String job = scanner.nextLine();
-                                nguoi = new Nguoi(id,name,dob,job);
-                                hoDan.addNguoi(nguois,nguoi);
+                                System.out.println("Nhap id thuoc ve ho dan nao: ");
+                                int idHodan1 = scanner.nextInt();
+                                scanner.nextLine();
+
+                                nguoi = new Nguoi(id,idHodan1,name,dob,job);
+
+                                hoDan.addNguoi(listNguois,nguoi);
                                 id++;
+
+                                hoDan.setNguoiNaoTrongHoDan(listHoDans,listNguois);
                                 break;
                             case 2:
                                 System.out.println("Nhap id cua doi tuong: ");
@@ -57,7 +64,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Nhap ten moi can doi: ");
                                 String dob1 = scanner.nextLine();
-                                hoDan.editHoVaTen(nguois,id,dob1);
+                                hoDan.editHoVaTen(listNguois,id1,dob1);
                                 break;
                             case 3:
                                 System.out.println("Nhap id cua doi tuong: ");
@@ -65,7 +72,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Nhap ngay thang nam sinh moi: ");
                                 String dob2 = scanner.nextLine();
-                                hoDan.editNgaySinh(nguois,id2,dob2);
+                                hoDan.editNgaySinh(listNguois,id2,dob2);
                                 break;
                             case 4:
                                 System.out.println("Nhap id cua doi tuong: ");
@@ -73,10 +80,10 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Nhap ngay nghe nghiep moi: ");
                                 String dob3 = scanner.nextLine();
-                                hoDan.editNgheNghiep(nguois,id3,dob3);
+                                hoDan.editNgheNghiep(listNguois,id3,dob3);
                                 break;
                             case 5:
-                                for (Nguoi i: nguois){
+                                for (Nguoi i: listNguois){
                                     System.out.println(i.toString());
                                 }
                         }
@@ -103,8 +110,8 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Nhap so nha cua ho: ");
                                 String soNha = scanner.nextLine();
-                                hoDan = new HoDan(idHoDan,soNguoiTrongHo,soNha,nguois);
-                                khuPho.addHoDan(hoDans,hoDan);
+                                hoDan = new HoDan(idHoDan,soNguoiTrongHo,soNha,hoDan.getNguoiNaoTrongHoDan());
+                                khuPho.addHoDan(listHoDans,hoDan);
                                 idHoDan++;
                                 break;
                             case 2:
@@ -113,7 +120,7 @@ public class View {
                                 scanner.nextLine();
                                 System.out.println("Nhap so nha moi: ");
                                 String soNhaMoi = scanner.nextLine();
-                                khuPho.editSoNha(hoDans,idHoDan1,soNhaMoi);
+                                khuPho.editSoNha(listHoDans,idHoDan1,soNhaMoi);
                                 break;
 
                             case 3:
@@ -123,17 +130,17 @@ public class View {
                                 System.out.println("Nhap so thanh vien can thay doi: ");
                                 int soThanhVienThayDoi = scanner.nextInt();
                                 scanner.nextLine();
-                                khuPho.editSoNguoiTrongHo(hoDans,idHoDan2,soThanhVienThayDoi);
+                                khuPho.editSoNguoiTrongHo(listHoDans,idHoDan2,soThanhVienThayDoi);
                                 break;
 
                             case 4:
-                                for (HoDan i:hoDans){
+                                for (HoDan i:listHoDans){
                                     System.out.println(i.toString());
                                 }
                                 break;
 
                             case 5:
-                                for (Nguoi i :  hoDan.getListOf80(nguois)){
+                                for (Nguoi i :  hoDan.getListOf80(listNguois)){
                                     System.out.println(i.toString());
                                 }
                                 break;
