@@ -58,13 +58,13 @@ public class HoDan {
     }
 
     public void setNguoiNaoTrongHoDan(List<HoDan> hoDans,List<Nguoi> nguois){
-        for (HoDan hoDan: hoDans){
-            for (Nguoi nguoi: nguois){
-                if (nguoi.getIdHoDan()==hoDan.getIdHodan()){
-                    nguoiTrongHoDan.add(nguoi);
-                }
-            }
-        }
+       for (HoDan hoDan: hoDans){
+           for (Nguoi nguoi:nguois){
+               if (nguoi.getIdHoDan()== hoDan.getIdHodan()&&!nguoiTrongHoDan.contains(nguoi)){
+                   nguoiTrongHoDan.add(nguoi);
+               }
+           }
+       }
     }
 
     public List<Nguoi> getNguoiNaoTrongHoDan(){
@@ -99,18 +99,24 @@ public class HoDan {
 
 
 
-    public List<Nguoi> getListOf80(List<Nguoi> list) {
+    public List<Nguoi> getListOf80(List<Nguoi> list) throws ArrayIndexOutOfBoundsException{
         List<Nguoi> agesOf80 = new ArrayList<>();
-        for (Nguoi i : list) {
-            String[] split = i.getNgaySinhCaNhan().split("/");
-            int year = Integer.parseInt(split[2]);
+       try {
 
-            if (year >= 80) {
-                agesOf80.add(i);
-            }
-        }
+
+           for (Nguoi i : list) {
+               String[] split = i.getNgaySinhCaNhan().split("/");
+               int year = Integer.parseInt(split[2]);
+
+               if (year >= 80) {
+                   agesOf80.add(i);
+               }
+           }
+
+       }catch (ArrayIndexOutOfBoundsException e){
+           System.out.println("Invalid input, input again!!!");
+       }
         return agesOf80;
-
     }
 
 
