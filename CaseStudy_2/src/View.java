@@ -10,13 +10,10 @@ public class View {
         MenuService menuService = new MenuService();
         List<StudentMark> studentMarkInstance = new ArrayList<>();
         MenuService.IOFile ioFile = new MenuService.IOFile();
+        studentMarkInstance = ioFile.readFile();
         int ID = 0;
 
-        try{
-            studentMarkInstance = ioFile.readFile();
-        } catch (NullPointerException ignored){
 
-        }
 
 
 
@@ -164,10 +161,7 @@ public class View {
 
                                 break;
 
-                            default:
 
-                                System.out.println("Invalid option !!! ");
-                                break;
                         }
 
                         break;
@@ -188,11 +182,6 @@ public class View {
                 case "0":
                     ioFile.writeFile(studentMarkInstance);
                     break;
-
-
-                default:
-                    System.out.println("Invalid option !!! ");
-
 
             }
         }
