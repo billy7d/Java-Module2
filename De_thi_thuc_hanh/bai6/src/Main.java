@@ -6,7 +6,7 @@ public class Main {
         Lop lop = new Lop();
         HocSinh hocSinh = new HocSinh();
         ArrayList<Lop> lops = new ArrayList<>();
-        ArrayList<HocSinh> allHocSinhs = new ArrayList<>();
+
 
         Scanner scanner = new Scanner(System.in);
         int choice;
@@ -41,8 +41,7 @@ public class Main {
                     System.out.println("Nhap lop cua hoc sinh");
                     String tenLopCuaHocSinh = scanner.nextLine();
                     hocSinh = new HocSinh(hoVaTen,dob,que,tenLopCuaHocSinh);
-                    allHocSinhs.add(hocSinh);
-                    lop.addHocSinhVaoLop(lops,allHocSinhs);
+                    lop.addHocSinhVaoLop(lops,hocSinh);
                     break;
 
                 case 3:

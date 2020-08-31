@@ -47,10 +47,9 @@ public class Lop {
         }
 
 
-        public void addHocSinhVaoLop(ArrayList<Lop> lops, ArrayList<HocSinh> allHocSinhs) {
+        public void addHocSinhVaoLop(ArrayList<Lop> lops,HocSinh hocSinh) {
             for (Lop lop : lops) {
-                for (HocSinh hocSinh: allHocSinhs)
-                if (lop.getTenLop().equals(hocSinh.getTenLop())) {
+                if (lop.getTenLop().equals(hocSinh.getTenLop())&&!hocSinhTrongLop.contains(hocSinh)) {
                     hocSinhTrongLop.add(hocSinh);
                 }
             }
