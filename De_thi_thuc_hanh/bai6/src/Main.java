@@ -47,9 +47,6 @@ public class Main {
                     break;
 
                 case 3:
-                    lop.displayLop(lops);
-                    break;
-                case 4:
                     TreeSet<String> lopTreeSet = new TreeSet<>();
                     for (Lop l: lops){
                         lopTreeSet.add(l.getTenLop());
