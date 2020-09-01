@@ -10,6 +10,7 @@ public class View {
         MenuService menuService = new MenuService();
         List<StudentMark> studentMarkInstance = new ArrayList<>();
         IO io = new IO();
+        String filePath;
         studentMarkInstance = io.readFile();
         int ID = 0;
 
@@ -180,6 +181,8 @@ public class View {
 
 
                 case "0":
+                    System.out.println("In put file path to save: ");
+                    filePath = scanner.nextLine();
                     io.writeFile(studentMarkInstance);
                     break;
 
