@@ -182,7 +182,6 @@ public class View {
 
                 case "0":
                     System.out.println("In put file path to save: ");
-                    filePath = scanner.nextLine();
                     io.writeFile(studentMarkInstance);
                     break;
 
