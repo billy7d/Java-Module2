@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +18,8 @@ public class Main {
             System.out.println("2. Add hoc sinh: ");
             System.out.println("3. Hien thi lop: ");
             System.out.println("0. Exit: ");
-
+            System.out.println(" ");
+            System.out.print("Action: ");
             choice = scanner.nextInt();
             scanner.nextLine();
 
@@ -47,6 +49,20 @@ public class Main {
                 case 3:
                     lop.displayLop(lops);
                     break;
+                case 4:
+                    TreeSet<String> lopTreeSet = new TreeSet<>();
+                    for (Lop l: lops){
+                        lopTreeSet.add(l.getTenLop());
+                    }
+
+                    for (String i:lopTreeSet) {
+                        System.out.println(i);
+                        for (HocSinh hS : lop.getHocSinhTrongLop()) {
+                            if (i.equals(hS.getTenLop())){
+                                System.out.println(hS.toString());
+                            }
+                        }
+                    }
 
             }
         } while (choice!=0);
