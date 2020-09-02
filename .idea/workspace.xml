@@ -21,26 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="263223ec-6b3c-4c61-94e1-4da7cbc2aa19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 2/java-cleancode-refactoring-exercise/java-cleancode-refactoring-exercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week 2/java-cleancode-refactoring-exercise/java-cleancode-refactoring-exercise.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 2/java-cleancode-refactoring-exercise/test/TennisGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 2/java-cleancode-refactoring-exercise/test/TennisGameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 2/tinh_ketqua_FIzzBuzz/src/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 2/tinh_ketqua_FIzzBuzz/src/FizzBuzz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 2/trienkhai_class_list_dongian/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 2/trienkhai_class_list_dongian/src/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/dem_map/out/production/dem_map/TreeMMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/dem_map/out/production/dem_map/TreeMMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/dem_map/src/TreeMMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/dem_map/src/TreeMMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/optional_queue_sudungmang/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/optional_queue_sudungmang/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/optional_queue_sudungmang/src/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/optional_queue_sudungmang/src/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/sudung_lop_ArrayIndexOutOfBoundsException/src/ArrayExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/sudung_lop_ArrayIndexOutOfBoundsException/src/ArrayExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/test/src/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/test/src/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/thanh_binarySearch_ko_dung_de_quy/out/production/thanh_binarySearch_ko_dung_de_quy/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/thanh_binarySearch_ko_dung_de_quy/out/production/thanh_binarySearch_ko_dung_de_quy/BinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/thanh_binarySearch_ko_dung_de_quy/src/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/thanh_binarySearch_ko_dung_de_quy/src/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/thuat_toan_noi_bot/out/production/thuat_toan_noi_bot/BubbleSortByStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/thuat_toan_noi_bot/out/production/thuat_toan_noi_bot/BubbleSortByStep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/thuat_toan_noi_bot/src/BubbleSortByStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/thuat_toan_noi_bot/src/BubbleSortByStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 4/Lesson 17/Thuchanh_racing_cars/src/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 4/Lesson 17/Thuchanh_racing_cars/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 4/Lesson 18/btap_tao_thread_dongian/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 4/Lesson 18/btap_tao_thread_dongian/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 4/Lesson 18/btap_tao_thread_dongian/src/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 4/Lesson 18/btap_tao_thread_dongian/src/NumberGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 4/Lesson 18/untitled/src/JDBCConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 4/Lesson 18/untitled/src/JDBCConnectionPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 4/Lesson 18/untitled/src/ObjectPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/Week 4/Lesson 18/untitled/src/ObjectPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/De_thi_thuc_hanh/bai6" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -177,6 +159,8 @@
       <workItem from="1597235732940" duration="1272000" />
       <workItem from="1597493224274" duration="30000" />
       <workItem from="1597888999327" duration="11000" />
+      <workItem from="1598880417646" duration="36000" />
+      <workItem from="1598973090026" duration="42000" />
     </task>
     <servers />
   </component>
@@ -209,11 +193,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1595776915468" />
-    <state x="1369" y="170" key="FileChooserDialogImpl" timestamp="1597493253439">
+    <state x="1369" y="170" key="FileChooserDialogImpl" timestamp="1598973130209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1095" y="135" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596427218500" />
-    <state x="1369" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597493253439" />
+    <state x="1369" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598973130209" />
     <state width="768" height="210" key="GridCell.Tab.0.bottom" timestamp="1595778859730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
