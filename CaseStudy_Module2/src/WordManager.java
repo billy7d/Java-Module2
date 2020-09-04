@@ -1,37 +1,32 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class WordManager {
-//    List<Word> list;
+    ArrayList<Word> arrayList;
     Word wordObj;
 
-    public void addWord(List<Word> list,Word wordObj){
+    public void addWord(Word wordObj){
 
-        list.add(wordObj);
+        arrayList = new ArrayList<>();
+        arrayList.add(wordObj);
     }
 
-    public Word removeWord(List<Word> list, String name) {
+    public Word removeWord(String name) {
 
-
-        for (Word i : list) {
+        arrayList = new ArrayList<>();
+        Word removeWord;
+        for (Word i : arrayList) {
             if (i.getName().equals(name)) {
-                list.remove(i);
+                arrayList.remove(i);
                 return i;
             }
         }
         return null;
     }
 
-    public void showWords(List<Word> list){
-        for (Word word:list){
-            System.out.println(list.toString());
-        }
-    }
 
-
-    public Word findWord(List<Word> list, String name){
-
-        for (Word i: list){
+    public Word findWord(String name){
+        arrayList = new ArrayList<>();
+        for (Word i: arrayList){
             if (i.getName().equals(name))
                 return i;
         }
@@ -39,5 +34,11 @@ public class WordManager {
     }
 
 
-
+    @Override
+    public String toString() {
+        return "WordManager{" +
+                "arrayList=" + arrayList +
+                ", wordObj=" + wordObj +
+                '}';
+    }
 }

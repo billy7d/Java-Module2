@@ -1,4 +1,5 @@
 public class MathCalculatorProxy implements Calculator {
+
     private MathCalculator mathCalculator;
 
     public void MathCalculator(){
