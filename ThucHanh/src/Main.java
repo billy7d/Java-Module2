@@ -6,8 +6,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         NhanVien nhanVien;
-        NhanVienParttime nhanVienParttime;
-        NhanVienFullTime nhanVienFullTime;
         ArrayList<NhanVien> nhanViens = new ArrayList<>();
         ArrayList<NhanVienFullTime> nhanVienFullTimes = new ArrayList<>();
         ArrayList<NhanVienParttime> nhanVienParttimes = new ArrayList<>();
@@ -47,9 +45,13 @@ public class Main {
 
 
 
-                    nhanVienFullTime = new NhanVienFullTime(idFt,name,age,phoneNumber,emailNhanVien,tienThuong,tienPhat,luongCung);
-                    nhanVienFullTimes.add(nhanVienFullTime);
-                    nhanViens.add(nhanVienFullTime);
+                    NhanVienFullTime nhanVienFullTime =
+                            new NhanVienFullTime(idFt,name,age,phoneNumber,emailNhanVien,tienThuong,tienPhat,luongCung);
+                    NhanVienFullTime nhanVienFullTimeToAdd =
+                            new NhanVienFullTime(idFt,name,age,phoneNumber,emailNhanVien,tienThuong,tienPhat,luongCung,Service.tinhLuongFullTime(nhanVienFullTime));
+
+                    nhanVienFullTimes.add(nhanVienFullTimeToAdd);
+                    nhanViens.add(nhanVienFullTimeToAdd);
 
                     break;
 
@@ -70,15 +72,19 @@ public class Main {
                     double soGiolv= scanner.nextDouble();
                     scanner.nextLine();
 
-                    nhanVienParttime = new NhanVienParttime(idPt,namePt,agePt,phoneNumberPt,emailNhanVienPt,soGiolv);
-                    nhanVienParttimes.add(nhanVienParttime);
-                    nhanViens.add(nhanVienParttime);
+                    NhanVienParttime nhanVienParttime =
+                            new NhanVienParttime(idPt,namePt,agePt,phoneNumberPt,emailNhanVienPt,soGiolv);
+                    NhanVienParttime nhanVienParttimeToAdd =
+                            new NhanVienParttime(idPt,namePt,agePt,phoneNumberPt,emailNhanVienPt,soGiolv,Service.tinhLuongParttime(nhanVienParttime));
+
+                    nhanVienParttimes.add(nhanVienParttimeToAdd);
+                    nhanViens.add(nhanVienParttimeToAdd);
 
 
                     break;
 //
                 case 3:
-
+                    Service.showLuongNvDuoiTb(nhanViens,nhanVienFullTimes);
                     break;
 //
 //                case 4:

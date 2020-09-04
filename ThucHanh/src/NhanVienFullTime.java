@@ -15,12 +15,12 @@ public class NhanVienFullTime extends NhanVien {
         this.luongCung = luongCung;
     }
 
-    public NhanVienFullTime(String idNhanVien, String hoVaTen, int age, int phoneNumber, String email,  double soTienThuong, double soTienPhat, double luongCung,double luong) {
-        super(idNhanVien, hoVaTen, age, phoneNumber, email);
+    public NhanVienFullTime(String idNhanVien, String hoVaTen, int age, int phoneNumber, String email,  double soTienThuong, double soTienPhat, double luongCung,double luongThucLinh) {
+        super(idNhanVien, hoVaTen, age, phoneNumber, email,luongThucLinh);
         this.soTienThuong = soTienThuong;
         this.soTienPhat = soTienPhat;
         this.luongCung = luongCung;
-        this.luongThucLinh =luong;
+        this.luongThucLinh =luongThucLinh;
     }
 
     public double getSoTienThuong() {
@@ -46,6 +46,8 @@ public class NhanVienFullTime extends NhanVien {
     public void setLuongCung(double luongCung) {
         this.luongCung = luongCung;
     }
+
+
 
     public double getLuongThucLinhFt() {
         return luongThucLinh;
@@ -103,5 +105,14 @@ public class NhanVienFullTime extends NhanVien {
         super.setEmail(email);
     }
 
-
+    @Override
+    public String toString() {
+        return "NhanVienFullTime{" +
+                super.toString()+
+                "soTienThuong=" + soTienThuong +
+                ", soTienPhat=" + soTienPhat +
+                ", luongCung=" + luongCung +
+                ", luongThucLinh=" + luongThucLinh +
+                '}';
+    }
 }

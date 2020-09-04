@@ -10,7 +10,7 @@ public class NhanVienParttime extends NhanVien {
 
 
     public NhanVienParttime(String idNhanVien, String hoVaTen, int age, int phoneNumber, String email,double soGioLamViec, double luongThucLinhPt) {
-        super(idNhanVien, hoVaTen, age, phoneNumber, email);
+        super(idNhanVien, hoVaTen, age, phoneNumber, email,luongThucLinhPt);
         this.soGioLamViec = soGioLamViec;
         this.luongThucLinhPt = luongThucLinhPt;
 
@@ -33,13 +33,13 @@ public class NhanVienParttime extends NhanVien {
     }
 
 
-    public double getLuongThucTinhPt() {
-        return super.getLuongThucTinh();
+    public double getLuongThucLinhPt() {
+        return this.luongThucLinhPt;
     }
 
 
-    public void setLuongThucTinhPt(double luongThucTinhPt) {
-        super.setLuongThucTinh(luongThucTinhPt);
+    public void setLuongThucLinhPt(double luongThucTinhPt) {
+        super.setLuongThucLinh(luongThucTinhPt);
     }
 
 
@@ -83,5 +83,11 @@ public class NhanVienParttime extends NhanVien {
         super.setEmail(email);
     }
 
-
+    @Override
+    public String toString() {
+        return "NhanVienParttime{" +
+                "soGioLamViec=" + soGioLamViec +
+                ", luongThucLinhPt=" + luongThucLinhPt +
+                '}';
+    }
 }

@@ -12,30 +12,33 @@ public class Service {
     }
 
 
-    public static void tinhLuongAllParttime(ArrayList<NhanVien> nhanViens, ArrayList<NhanVienParttime> nhanVienParttimes) {
-        for (NhanVien nhanVien: nhanViens){
-            for (NhanVienParttime nhanVienParttime:nhanVienParttimes){
-                if (nhanVien.getIdNhanVien().equals(nhanVienParttime.getIdNhanVienPartTime())){
-                    nhanVienParttime.setLuongThucTinhPt(nhanVienParttime.getSoGioLamViec()*100000);
-                }
-            }
-        }
-
+    public static double tinhLuongParttime(NhanVienParttime nhanVienParttime) {
+      return nhanVienParttime.getSoGioLamViec()*10000;
     }
 
-    public static void tinhLuongAllFullTime(ArrayList<NhanVien> nhanViens, ArrayList<NhanVienFullTime> nhanVienFullTimes) {
-        for (NhanVien nhanVien: nhanViens){
-            for (NhanVienFullTime nhanVienFullTime:nhanVienFullTimes){
-                if (nhanVien.getIdNhanVien().equals(nhanVienFullTime.getIdNhanVienFullTime())){
-                    nhanVienFullTime.setLuongThucLinhFt(nhanVienFullTime.getLuongCung()+
-                            (nhanVienFullTime.getSoTienThuong()-nhanVienFullTime.getSoTienPhat()));
-                }
-            }
-        }
+    public static double tinhLuongFullTime(NhanVienFullTime nhanVienFullTime) {
+        return nhanVienFullTime.getLuongCung()+(nhanVienFullTime.getSoTienThuong()-nhanVienFullTime.getSoTienPhat());
     }
 
-    public static void tinhLuongTrungBinhAll(ArrayList<NhanVien> nhanViens){
-        for (Nhan)
+    public static double tinhLuongTrungBinhAll(ArrayList<NhanVien> nhanViens){
+        double luong =0;
+        for (NhanVien nhanVien:nhanViens){
+            luong +=nhanVien.getLuongThucLinh();
+
+        }
+        return luong/nhanViens.size();
+    }
+
+    public static void showLuongNvDuoiTb(ArrayList<NhanVien> nhanViens,ArrayList<NhanVienFullTime> nhanVienFullTimes){
+        ArrayList<NhanVienFullTime> showNhanVienFullTimes = new ArrayList<>();
+        for (NhanVien nhanVien:nhanViens){
+            for (NhanVienFullTime nhanVienFullTime:nhanVienFullTimes)
+            if (nhanVienFullTime.getLuongThucLinh()<Service.tinhLuongTrungBinhAll(nhanViens)
+                    &&!showNhanVienFullTimes.contains(nhanVienFullTime)){
+                showNhanVienFullTimes.add(nhanVienFullTime);
+            }
+        }
+        System.out.println(showNhanVienFullTimes);
     }
 
 //    public static void showLuongFullTimeDuoiTB(ArrayList<NhanVienFullTime> nhanVienFullTimes){

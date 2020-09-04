@@ -4,7 +4,7 @@ public class NhanVien {
     private int age;
     private int phoneNumber;
     private String email;
-    private double luongThucTinh;
+    private double luongThucLinh;
 
     public NhanVien(String idNhanVien, String hoVaTen, int age, int phoneNumber, String email) {
         this.idNhanVien = idNhanVien;
@@ -20,7 +20,7 @@ public class NhanVien {
         this.age = age;
         this.phoneNumber = phoneNumber;
         this.email = email;
-        this.luongThucTinh = luongThucTinh;
+        this.luongThucLinh = luongThucTinh;
 
     }
 
@@ -64,12 +64,25 @@ public class NhanVien {
         this.email = email;
     }
 
-    public double getLuongThucTinh() {
-        return luongThucTinh;
+    public double getLuongThucLinh() {
+        return luongThucLinh;
     }
 
-    public void setLuongThucTinh(double luongThucTinh) {
-        this.luongThucTinh = luongThucTinh;
+    public void setLuongThucLinh(double luongThucLinh) {
+        this.luongThucLinh = luongThucLinh;
+    }
+
+
+    @Override
+    public String toString() {
+        return "NhanVien{" +
+                "idNhanVien='" + idNhanVien + '\'' +
+                ", hoVaTen='" + hoVaTen + '\'' +
+                ", age=" + age +
+                ", phoneNumber=" + phoneNumber +
+                ", email='" + email + '\'' +
+                ", luongThucLinh=" + luongThucLinh +
+                '}';
     }
 }
 
