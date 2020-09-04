@@ -1,23 +1,34 @@
 public class NhanVien {
-    private int idNhanVien;
+    private String idNhanVien;
     private String hoVaTen;
     private int age;
     private int phoneNumber;
     private String email;
+    private double luongThucTinh;
 
-    public NhanVien(int idNhanVien, String hoVaTen, int age, int phoneNumber, String email) {
+    public NhanVien(String idNhanVien, String hoVaTen, int age, int phoneNumber, String email) {
         this.idNhanVien = idNhanVien;
         this.hoVaTen = hoVaTen;
         this.age = age;
         this.phoneNumber = phoneNumber;
         this.email = email;
+
+    }
+    public NhanVien(String idNhanVien, String hoVaTen, int age, int phoneNumber, String email,double luongThucTinh) {
+        this.idNhanVien = idNhanVien;
+        this.hoVaTen = hoVaTen;
+        this.age = age;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.luongThucTinh = luongThucTinh;
+
     }
 
-    public int getIdNhanVien() {
+    public String getIdNhanVien() {
         return idNhanVien;
     }
 
-    public void setIdNhanVien(int idNhanVien) {
+    public void setIdNhanVien(String idNhanVien) {
         this.idNhanVien = idNhanVien;
     }
 
@@ -51,6 +62,14 @@ public class NhanVien {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public double getLuongThucTinh() {
+        return luongThucTinh;
+    }
+
+    public void setLuongThucTinh(double luongThucTinh) {
+        this.luongThucTinh = luongThucTinh;
     }
 }
 

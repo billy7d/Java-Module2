@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Service {
 
@@ -13,40 +12,46 @@ public class Service {
     }
 
 
-    public static ArrayList<Double> tinhLuongAllParttime(ArrayList<NhanVienParttime> nhanVienParttimes) {
-        ArrayList<Double> luongNvPt = new ArrayList<>();
-        for (NhanVienParttime nhanVienParttime : nhanVienParttimes) {
-            double tienLuongPt = nhanVienParttime.getSoGioLamViec() * 100000;
-            luongNvPt.add(tienLuongPt);
-            System.out.println("Luong cua nhan vien "+nhanVienParttime.getHoVaTen() +" la: "+tienLuongPt);
-        }
-        return luongNvPt;
-    }
-
-    public static ArrayList<Double> tinhLuongAllFullTime(ArrayList<NhanVienFullTime> nhanVienFullTimes) {
-        ArrayList<Double> luongNvFt = new ArrayList<>();
-        for (NhanVienFullTime nhanVienFullTime : nhanVienFullTimes) {
-            double tienLuongFt = nhanVienFullTime.getLuongCung()+(nhanVienFullTime.getSoTienThuong()-nhanVienFullTime.getSoTienPhat());
-            luongNvFt.add(tienLuongFt);
-            nhanVienFullTime.setLuong(tienLuongFt);
-        }
-        return luongNvFt;
-    }
-
-    public static void showLuongFullTimeDuoiTB(ArrayList<NhanVienFullTime> nhanVienFullTimes){
-        double mucLuongFtTrungBinh = 0;
-
-        for (Double db: tinhLuongAllFullTime(nhanVienFullTimes)){
-            mucLuongFtTrungBinh+=db;
-        }
-        mucLuongFtTrungBinh = mucLuongFtTrungBinh/ tinhLuongAllFullTime(nhanVienFullTimes).size();
-
-        for (NhanVienFullTime nhanVienFullTime: nhanVienFullTimes){
-            if (nhanVienFullTime.getLuong()<mucLuongFtTrungBinh){
-                System.out.println(nhanVienFullTime);
+    public static void tinhLuongAllParttime(ArrayList<NhanVien> nhanViens, ArrayList<NhanVienParttime> nhanVienParttimes) {
+        for (NhanVien nhanVien: nhanViens){
+            for (NhanVienParttime nhanVienParttime:nhanVienParttimes){
+                if (nhanVien.getIdNhanVien().equals(nhanVienParttime.getIdNhanVienPartTime())){
+                    nhanVienParttime.setLuongThucTinhPt(nhanVienParttime.getSoGioLamViec()*100000);
+                }
             }
         }
 
     }
+
+    public static void tinhLuongAllFullTime(ArrayList<NhanVien> nhanViens, ArrayList<NhanVienFullTime> nhanVienFullTimes) {
+        for (NhanVien nhanVien: nhanViens){
+            for (NhanVienFullTime nhanVienFullTime:nhanVienFullTimes){
+                if (nhanVien.getIdNhanVien().equals(nhanVienFullTime.getIdNhanVienFullTime())){
+                    nhanVienFullTime.setLuongThucLinhFt(nhanVienFullTime.getLuongCung()+
+                            (nhanVienFullTime.getSoTienThuong()-nhanVienFullTime.getSoTienPhat()));
+                }
+            }
+        }
+    }
+
+    public static void tinhLuongTrungBinhAll(ArrayList<NhanVien> nhanViens){
+        for (Nhan)
+    }
+
+//    public static void showLuongFullTimeDuoiTB(ArrayList<NhanVienFullTime> nhanVienFullTimes){
+//        double mucLuongFtTrungBinh = 0;
+//
+//        for (Double db: tinhLuongAllFullTime(nhanVienFullTimes)){
+//            mucLuongFtTrungBinh+=db;
+//        }
+//        mucLuongFtTrungBinh = mucLuongFtTrungBinh/ tinhLuongAllFullTime(nhanVienFullTimes).size();
+//
+//        for (NhanVienFullTime nhanVienFullTime: nhanVienFullTimes){
+//            if (nhanVienFullTime.getLuongThucLinhFt()<mucLuongFtTrungBinh){
+//                System.out.println(nhanVienFullTime);
+//            }
+//        }
+//
+//    }
 
 }

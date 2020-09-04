@@ -3,21 +3,24 @@ public class NhanVienFullTime extends NhanVien {
     private double soTienThuong;
     private double soTienPhat;
     private double luongCung;
-    private double luong;
+    private double luongThucLinh;
 
 
 
 
-    public NhanVienFullTime(int idNhanVien, String hoVaTen, int age, int phoneNumber, String email, double soTienThuong, double soTienPhat, double luongCung) {
-        super(idNhanVien, hoVaTen, age, phoneNumber, email);
+    public NhanVienFullTime(String idNhanVienFullTime, String hoVaTen, int age, int phoneNumber, String email, double soTienThuong, double soTienPhat, double luongCung) {
+        super(idNhanVienFullTime, hoVaTen, age, phoneNumber, email);
         this.soTienThuong = soTienThuong;
         this.soTienPhat = soTienPhat;
         this.luongCung = luongCung;
     }
 
-    public NhanVienFullTime(int idNhanVien, String hoVaTen, int age, int phoneNumber, String email,double luong) {
+    public NhanVienFullTime(String idNhanVien, String hoVaTen, int age, int phoneNumber, String email,  double soTienThuong, double soTienPhat, double luongCung,double luong) {
         super(idNhanVien, hoVaTen, age, phoneNumber, email);
-        this.luong =luong;
+        this.soTienThuong = soTienThuong;
+        this.soTienPhat = soTienPhat;
+        this.luongCung = luongCung;
+        this.luongThucLinh =luong;
     }
 
     public double getSoTienThuong() {
@@ -44,21 +47,19 @@ public class NhanVienFullTime extends NhanVien {
         this.luongCung = luongCung;
     }
 
-    public double getLuong() {
-        return luong;
+    public double getLuongThucLinhFt() {
+        return luongThucLinh;
     }
 
-    public void setLuong(double luong) {
-        this.luong = luong;
+    public void setLuongThucLinhFt(double luongThucLinh) {
+        this.luongThucLinh = luongThucLinh;
     }
 
-    @Override
-    public int getIdNhanVien() {
+    public String getIdNhanVienFullTime() {
         return super.getIdNhanVien();
     }
 
-    @Override
-    public void setIdNhanVien(int idNhanVien) {
+    public void setIdNhanVienFullTime(String idNhanVien) {
         super.setIdNhanVien(idNhanVien);
     }
 

@@ -1,20 +1,28 @@
 public class NhanVienParttime extends NhanVien {
     private double soGioLamViec;
+    private double luongThucLinhPt;
 
 
-
-
-    public NhanVienParttime(int idNhanVien, String hoVaTen, int age, int phoneNumber, String email) {
-        super(idNhanVien, hoVaTen, age, phoneNumber, email);
-
-    }
-
-    public NhanVienParttime(int idNhanVien, String hoVaTen, int age, int phoneNumber, String email, double soGioLamViec) {
-        super(idNhanVien, hoVaTen, age, phoneNumber, email);
+    public NhanVienParttime(String idNhanVienPartTime, String hoVaTen, int age, int phoneNumber, String email, double soGioLamViec) {
+        super(idNhanVienPartTime, hoVaTen, age, phoneNumber, email);
         this.soGioLamViec = soGioLamViec;
     }
 
 
+    public NhanVienParttime(String idNhanVien, String hoVaTen, int age, int phoneNumber, String email,double soGioLamViec, double luongThucLinhPt) {
+        super(idNhanVien, hoVaTen, age, phoneNumber, email);
+        this.soGioLamViec = soGioLamViec;
+        this.luongThucLinhPt = luongThucLinhPt;
+
+    }
+
+    public String getIdNhanVienPartTime() {
+        return super.getIdNhanVien();
+    }
+
+    public void setIdNhanVienPartTime(String idNhanVien) {
+        super.setIdNhanVien(idNhanVien);
+    }
 
     public double getSoGioLamViec() {
         return soGioLamViec;
@@ -24,15 +32,16 @@ public class NhanVienParttime extends NhanVien {
         this.soGioLamViec = soGioLamViec;
     }
 
-    @Override
-    public int getIdNhanVien() {
-        return super.getIdNhanVien();
+
+    public double getLuongThucTinhPt() {
+        return super.getLuongThucTinh();
     }
 
-    @Override
-    public void setIdNhanVien(int idNhanVien) {
-        super.setIdNhanVien(idNhanVien);
+
+    public void setLuongThucTinhPt(double luongThucTinhPt) {
+        super.setLuongThucTinh(luongThucTinhPt);
     }
+
 
     @Override
     public String getHoVaTen() {
@@ -73,4 +82,6 @@ public class NhanVienParttime extends NhanVien {
     public void setEmail(String email) {
         super.setEmail(email);
     }
+
+
 }
