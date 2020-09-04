@@ -17,6 +17,7 @@ public class Main {
             System.out.println("2. Add nhan vien Part time");
             System.out.println("3. Danh sach nv Full time luong < luong TB");
             System.out.println("4. Tinh so luong cho tat ca Nv ban thoi gian: ");
+            System.out.println("5. Show all nhan vien: ");
 
             choice =scanner.nextInt();
             scanner.nextLine();
@@ -82,14 +83,17 @@ public class Main {
 
 
                     break;
-//
+
                 case 3:
                     Service.showLuongNvDuoiTb(nhanViens,nhanVienFullTimes);
                     break;
-//
-//                case 4:
-//                    Service.showLuongFullTimeDuoiTB(nhanVienFullTimes);
-//                    break;
+
+                case 4:
+                    Service.showLuongAllNvParttime(nhanVienParttimes);
+                    break;
+                case 5:
+                    System.out.println(nhanViens.toString());
+                    break;
 
 
 

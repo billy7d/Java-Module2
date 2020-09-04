@@ -75,14 +75,13 @@ public class NhanVien {
 
     @Override
     public String toString() {
-        return "NhanVien{" +
+        return " " +
                 "idNhanVien='" + idNhanVien + '\'' +
                 ", hoVaTen='" + hoVaTen + '\'' +
                 ", age=" + age +
                 ", phoneNumber=" + phoneNumber +
                 ", email='" + email + '\'' +
-                ", luongThucLinh=" + luongThucLinh +
-                '}';
+                ' ';
     }
 }
 

@@ -34,7 +34,7 @@ public class NhanVienParttime extends NhanVien {
 
 
     public double getLuongThucLinhPt() {
-        return this.luongThucLinhPt;
+        return luongThucLinhPt;
     }
 
 
@@ -85,9 +85,10 @@ public class NhanVienParttime extends NhanVien {
 
     @Override
     public String toString() {
-        return "NhanVienParttime{" +
-                "soGioLamViec=" + soGioLamViec +
-                ", luongThucLinhPt=" + luongThucLinhPt +
-                '}';
+        return  "NhanVienParttime: " +
+                super.toString()+
+                " soGioLamViec=" + soGioLamViec+
+                " luong thuc linh = "+luongThucLinhPt
+                ;
     }
 }

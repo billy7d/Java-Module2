@@ -54,7 +54,7 @@ public class NhanVienFullTime extends NhanVien {
     }
 
     public void setLuongThucLinhFt(double luongThucLinh) {
-        this.luongThucLinh = luongThucLinh;
+        super.setLuongThucLinh(luongThucLinh);
     }
 
     public String getIdNhanVienFullTime() {
@@ -107,12 +107,12 @@ public class NhanVienFullTime extends NhanVien {
 
     @Override
     public String toString() {
-        return "NhanVienFullTime{" +
+        return  "Nhan vien full time: " +
                 super.toString()+
-                "soTienThuong=" + soTienThuong +
+                " soTienThuong=" + soTienThuong +
                 ", soTienPhat=" + soTienPhat +
-                ", luongCung=" + luongCung +
-                ", luongThucLinh=" + luongThucLinh +
-                '}';
+                ", luongCung=" + luongCung+
+                ", luong thuc linh= "+luongThucLinh
+                ;
     }
 }
