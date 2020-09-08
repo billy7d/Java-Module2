@@ -1,4 +1,4 @@
-public class NhanVienFullTime extends NhanVien {
+public class NhanVienFullTime extends NhanVien implements Comparable<NhanVienFullTime> {
 
     private double soTienThuong;
     private double soTienPhat;
@@ -112,7 +112,11 @@ public class NhanVienFullTime extends NhanVien {
                 " soTienThuong=" + soTienThuong +
                 ", soTienPhat=" + soTienPhat +
                 ", luongCung=" + luongCung+
-                ", luong thuc linh= "+luongThucLinh
-                ;
+                ", luong thuc linh= "+luongThucLinh;
+    }
+
+    @Override
+    public int compareTo(NhanVienFullTime o) {
+        return Double.compare(this.getLuongThucLinhFt(),o.getLuongThucLinhFt());
     }
 }

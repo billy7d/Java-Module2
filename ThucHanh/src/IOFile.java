@@ -8,7 +8,6 @@ public class IOFile {
         ObjectOutputStream objectOutputStream = null;
         try {
             objectOutputStream = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Admin\\Desktop\\1.txt"));
-
             objectOutputStream.writeObject(list);
             objectOutputStream.close();
         } catch (IOException e) {
@@ -22,7 +21,6 @@ public class IOFile {
 
         try {
             objectInputStream = new ObjectInputStream(new FileInputStream("C:\\Users\\Admin\\Desktop\\1.txt"));
-
 
             List<NhanVien> list = (List<NhanVien>) objectInputStream.readObject();
             objectInputStream.close();

@@ -1,5 +1,6 @@
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -18,6 +19,7 @@ public class Main {
             System.out.println("3. Danh sach nv Full time luong < luong TB");
             System.out.println("4. Tinh so luong cho tat ca Nv ban thoi gian: ");
             System.out.println("5. Show all nhan vien: ");
+            System.out.println("6. Sap xep nvien toan tgian theo so luong tang dan: ");
 
             choice =scanner.nextInt();
             scanner.nextLine();
@@ -80,8 +82,6 @@ public class Main {
 
                     nhanVienParttimes.add(nhanVienParttimeToAdd);
                     nhanViens.add(nhanVienParttimeToAdd);
-
-
                     break;
 
                 case 3:
@@ -93,6 +93,11 @@ public class Main {
                     break;
                 case 5:
                     System.out.println(nhanViens.toString());
+                    break;
+
+                case 6:
+                    Collections.sort(nhanVienFullTimes);
+                    System.out.println(nhanVienFullTimes.toString());
                     break;
 
 

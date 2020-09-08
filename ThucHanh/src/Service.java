@@ -1,5 +1,7 @@
 import java.net.ServerSocket;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Service {
 
@@ -31,8 +33,8 @@ public class Service {
     }
 
 
-    public static void showLuongAllNvParttime(ArrayList<NhanVienParttime> nhanVienParttimes){
-        for (NhanVienParttime nhanVienParttime: nhanVienParttimes){
+    public static void showLuongAllNvParttime(ArrayList<NhanVienParttime> nhanVienParttimes) {
+        for (NhanVienParttime nhanVienParttime : nhanVienParttimes) {
             nhanVienParttime.setLuongThucLinhPt(Service.tinhLuongParttime(nhanVienParttime));
         }
         System.out.println(nhanVienParttimes);
@@ -45,10 +47,18 @@ public class Service {
                 showNhanVienFullTimes.add(nhanVienFullTime);
             }
         }
-
         System.out.println(showNhanVienFullTimes);
     }
 
+    public static void validateRegex(String REGEX, String regexCompare) {
+        Pattern pattern;
+        Matcher matcher;
+        do {
+             pattern = Pattern.compile(REGEX);
+             matcher = pattern.matcher(regexCompare);
+        } while(matcher.matches());
+
+    }
 
 }
 
